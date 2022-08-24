@@ -5,7 +5,7 @@ export const MainRoutes = () => {
   return (
     <Routes>
         <Route />
-        <Route/>
+        <Route />
         <Route/>
         <Route/>
         <Route/>
