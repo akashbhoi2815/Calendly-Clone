@@ -1,0 +1,63 @@
+.price{
+    border: 2px solid red;
+    display: flex;
+}
+
+.price>div{
+    width:20%;
+height: 400px;
+    margin:20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: rgb(248,248,248);
+   
+}
+
+.basic{
+    /* border: 2px solid red; */
+    width: 30%;
+    margin-left: 20px;
+}
+.basic>h5{
+    font-size: 1.3rem;
+    line-height: 1.4;
+    text-align: left;
+    color: rgb(11, 53, 88);
+    font-weight: 600;
+    margin-bottom: 24px;
+    
+    margin-top: 20px;
+    width: 180px;
+    height: 29.11px;
+}
+
+.Always{
+    text-align: center;
+    /* border: 2px solid blue; */
+    font-size: 1.75rem;
+     
+    line-height: 1.125;
+    font-weight: 700;
+}
+
+.basics{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin: 20px;
+}
+
+.baiscs>p{
+     font-size: 800px;
+    color: rgb(71, 103, 136);
+     
+    line-height: 1.71429;
+    font-weight: 400;
+}
+
+.bottom{
+    width: 80%;
+   margin-left: 20px;
+   padding: 10px;
+   border-radius: 10px;
+    border: 1px solid blue;
+    margin-top: 170px;
+}
