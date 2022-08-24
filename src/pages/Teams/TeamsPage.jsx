@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@chakra-ui/react";
 import { Button, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
+
 export const TeamsPage = () => {
   return (
     <Box margin={"auto"} justify={"center"}>
