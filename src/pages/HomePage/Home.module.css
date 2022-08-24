@@ -1,0 +1,93 @@
+.logo1{
+    position: absolute;
+    left: -10%;
+    animation-name: slidein;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+.logo2{
+    position: absolute;
+    left: -10%;
+    animation-name: slidein;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+.logo3{
+    position: absolute;
+    left: -10%;
+    animation-name: slidein;
+    animation-duration: 8s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+.logo4{
+    position: absolute;
+    left: -10%;
+    animation-name: slidein;
+    animation-duration: 8s;
+    animation-delay: 4s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+.logo5{
+    position: absolute;
+    left: -10%;
+    animation-name: slidein;
+    animation-duration: 8s;
+    animation-delay: 5s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+.logo6{
+    position: absolute;
+    left: -10%;
+    animation-name: slidein;
+    animation-duration: 8s;
+    animation-delay: 6s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+.logo7{
+    position: absolute;
+    left: -10%;
+    animation-name: slidein;
+    animation-duration: 8s;
+    animation-delay: 7s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+.logo8{
+    position: absolute;
+    left: -10%;
+    animation-name: slidein;
+    animation-duration: 8s;
+    animation-delay: 8s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+@keyframes slidein {
+    from{
+        left:-10%;
+    }
+    to{
+        left:100%;
+    }
+}
