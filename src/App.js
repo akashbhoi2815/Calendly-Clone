@@ -1,4 +1,6 @@
+
 import './App.css';
+import { IndividualPage } from './Pages/Individual/IndividualPage';
 
 
 function App() {
