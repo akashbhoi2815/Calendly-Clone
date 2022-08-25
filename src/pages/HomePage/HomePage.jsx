@@ -10,7 +10,7 @@ import capture_4 from './Images/capture_4.png';
 
 export const HomePage = () => {
   return (
-    <Box width="100%" margin="auto" marginTop="5%">
+    <Box width="100%" margin="auto" marginTop="8%">
       <Box width="80%" display="flex" justifyContent="space-between" margin='auto' marginBottom="7%">
          <Box width="35%">
              <Box width="350px" textAlign="left">

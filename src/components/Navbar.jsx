@@ -8,7 +8,7 @@ export const Navbar = () => {
   return (
     <>
 
-   <Box mt="2%" width="100%" >
+   <Box top='0' padding="2%" width="100%" position="fixed" bg="whiteAlpha.900">
 
    <Box display="flex"  width="100%" alignItems="center" justifyContent="space-evenly" >
    <Box >
