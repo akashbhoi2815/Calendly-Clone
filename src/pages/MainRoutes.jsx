@@ -19,7 +19,6 @@ export const MainRoutes = () => {
         <Route path='/teams' element={<TeamsPage/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signUp' element={<SignUp/>}/>
-
     </Routes>
     </>
   )

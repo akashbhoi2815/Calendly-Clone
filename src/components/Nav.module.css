@@ -24,7 +24,7 @@
     display: block;
     position: absolute;
     left:-500px;
-    margin-top:50px; 
+    margin-top:70px; 
     transform: scale(1.1);
 }
 
@@ -35,7 +35,7 @@
     display: block;
     position: absolute;
     left:-650px;
-    margin-top:50px; 
+    margin-top:70px; 
     transform: scale(1.2);
 }
 .menuSub1 a{
