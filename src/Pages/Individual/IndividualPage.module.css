@@ -1,0 +1,129 @@
+
+
+.individual_main{
+    width: 100%;
+}
+
+/* 1st issue Top section  start */
+.individual_main1{
+    width: 100%;
+}
+
+/* box 1 */
+.individual_box1{
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+
+.individual_box1_a{
+    width: 50%;
+    /* border: 1px solid; */
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.individual_box1_b{
+    width: 50%;
+    /* border: 1px solid; */
+}
+
+/* box 2, 4, 6 */
+
+.individual_box2{
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+
+.individual_box2_a{
+    width: 50%;
+    /* border: 1px solid; */
+    padding: 50px 0px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.individual_box2_b{
+    width: 50%;
+    /* border: 1px solid; */
+}
+
+/* box 3 & 5 */
+
+.individual_box3{
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+
+.individual_box3_a{
+    width: 50%;
+    /* border: 1px solid; */
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.individual_box3_b{
+    width: 50%;
+    /* border: 1px solid; */
+}
+
+/* 1st issue Top section  end */
+
+/* 2nd issue Integration  start */
+.individual_main2{
+width: 100%;
+background-color: #f7faff;
+margin-bottom: 100px;
+padding: 50px;
+}
+
+.individual_main2_box{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* 2nd issue Integration  end */
+
+/*  3rd issue how works start */
+.individual_main3{
+    width: 100%;
+    /* background-color: #f7faff; */
+    margin-bottom: 100px;
+    /* padding: 50px; */
+    }
+    
+    .individual_main3_box{
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    /*  3rd issue how works  end */
+
+

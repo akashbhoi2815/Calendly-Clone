@@ -8,6 +8,7 @@ import { TeamsPage } from './Teams/TeamsPage'
 import { SignUp } from './SignUp/signUp'
 
 
+
 export const MainRoutes = () => {
   return (
    <>
@@ -18,7 +19,7 @@ export const MainRoutes = () => {
         <Route path='/teams' element={<TeamsPage/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signUp' element={<SignUp/>}/>
-            
+
     </Routes>
     </>
   )
