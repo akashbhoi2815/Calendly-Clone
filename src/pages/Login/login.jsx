@@ -31,7 +31,6 @@ export const Login = () => {
   console.log("date: ", date, months[m]);
 
 
-export const Login = () => {
   return (
     <Box>
       <Box className="nav">
