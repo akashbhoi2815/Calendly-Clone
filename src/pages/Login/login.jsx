@@ -30,6 +30,8 @@ export const Login = () => {
   let date = months[m] + " " + today.getDate() + "," + today.getFullYear();
   console.log("date: ", date, months[m]);
 
+
+export const Login = () => {
   return (
     <Box>
       <Box className="nav">
