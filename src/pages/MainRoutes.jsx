@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import { Navbar } from '../components/Navbar'
 import { HomePage } from './HomePage/HomePage'
 import { IndividualPage } from './Individual/IndividualPage'
-import { Login } from './Login/login'
+import { Login } from './Login/Login'
 import { TeamsPage } from './Teams/TeamsPage'
 import { SignUp } from './SignUp/signUp'
 
