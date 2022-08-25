@@ -1,13 +1,12 @@
 
 import './App.css';
-import { IndividualPage } from './Pages/Individual/IndividualPage';
-import { TeamsPage } from './Pages/Teams/TeamsPage';
+import  {MainRoutes}  from './Pages/MainRoutes';
 
 
 function App() {
   return (
     <div className="App">
-    <TeamsPage/>
+      <MainRoutes />
     </div>
   );
 }

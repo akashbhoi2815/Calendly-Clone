@@ -1,4 +1,5 @@
 import React from "react";
+import "./login.css";
 import {
   Stack,
   Box,
@@ -7,9 +8,9 @@ import {
   Input,
   Button,
   Flex,
-  Img
+  Img,
 } from "@chakra-ui/react";
-import "./login.css";
+
 export const Login = () => {
   let months = [
     "January",
@@ -33,7 +34,11 @@ export const Login = () => {
   return (
     <Box>
       <Box className="nav">
-        <Img w={"12rem"} m="20px 0px 20px 100px" src="https://www.cloudradial.com/wp-content/uploads/elementor/thumbs/calendly-logo-final-pbwp54lw6jgs0k52aozk75jo94dwumled3or1fqj5w.png"></Img>
+        <Img
+          w={"12rem"}
+          m="20px 0px 20px 100px"
+          src="https://www.cloudradial.com/wp-content/uploads/elementor/thumbs/calendly-logo-final-pbwp54lw6jgs0k52aozk75jo94dwumled3or1fqj5w.png"
+        ></Img>
       </Box>
       <br />
       <br />
@@ -43,7 +48,6 @@ export const Login = () => {
         m={"auto"}
         width="90%"
         textAlign={"start"}
-        
       >
         <Box w="50%" ml={"100"} mt="25px">
           <Box>
@@ -96,7 +100,7 @@ export const Login = () => {
           h="70vh"
           bgI
         >
-          <Box className="box" >
+          <Box className="box">
             <br />
             <Button variant={"normal"}>WHAT'S NEW?</Button>
             <br />
@@ -115,11 +119,9 @@ export const Login = () => {
             <br />
 
             <Text className="save_seat">Save your seat {`>`}</Text>
-            
           </Box>
         </Box>
       </Stack>
-      
     </Box>
   );
 };
