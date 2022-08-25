@@ -78,7 +78,7 @@ export const Login = () => {
             <Text className="signup_lable">
               Don’t have an account?{" "}
               <span style={{ color: "#486bff", lineHeight: "25px" }}>
-                {" "}
+                
                 Sign Up
               </span>
             </Text>
@@ -94,7 +94,7 @@ export const Login = () => {
           //  size="40%"
           bgPosition={"right"}
           h="70vh"
-          bgI
+          
         >
           <Box className="box" >
             <br />
