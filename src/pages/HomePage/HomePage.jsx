@@ -43,7 +43,7 @@ export const HomePage = () => {
          </Box>
       </Box>
 
-      <Box padding="3%" width="100%" bg="#f8f8f8" marginBottom="8%">
+      <Box padding="3%" width="100%" bg="#f8f8f8" textAlign="center" marginBottom="8%">
          <Box padding="2%" marginBottom="3%">
             <Text fontWeight="bold" fontSize="2xl" color="#1d344b">Simple scheduling for more than<br/><span style={{color:"blue"}}>10,000,000</span>users worldwide</Text>
          </Box>
@@ -75,7 +75,7 @@ export const HomePage = () => {
         </Box>
       </Box>
 
-    <Box width='80%' margin="auto" marginBottom="9%">
+    <Box width='80%' margin="auto" textAlign="center" marginBottom="9%">
        <Heading color="#1d344b ">We make it easy to get started</Heading>
        <Box marginTop="5%" display="flex" justifyContent='center' gap={8}>
          <Box boxShadow="2xl" width="350px" height="200px" p={5} textAlign="left">
@@ -96,7 +96,7 @@ export const HomePage = () => {
        </Box>
     </Box>
      
-     <Box width="80%" margin='auto' marginBottom="8%">
+     <Box width="80%" margin='auto' textAlign="center" marginBottom="8%">
          <Heading marginBottom="3%" color="#1d344b" as="h5">Scheduling for any meeting type</Heading>
           <Box display="flex" flexDir="row" flexWrap="wrap" textAlign="left" gap={5} justifyContent="center">
                <Box boxShadow="2xl" width="550px" height="210px" p={5}>
@@ -122,7 +122,7 @@ export const HomePage = () => {
           </Box>
      </Box>
 
-     <Box p={8} bg="#f7faff" marginTop="5%" marginBottom='5%'>
+     <Box p={8} bg="#f7faff" marginTop="5%" textAlign="center" marginBottom='5%'>
          <Text mb={5} color="#006bff">SOLUTIONS</Text>
          <Heading marginBottom="5%" color="#1d344b">The right Calendly for the work you do</Heading>
          <Box  display="flex" flexDir="row" flexWrap="wrap" textAlign="left" gap={5} justifyContent="center">
@@ -247,7 +247,7 @@ export const HomePage = () => {
         </Box>
      </Box>
 
-     <Box bg="#f7faff" padding="3%">
+     <Box bg="#f7faff" padding="3%" textAlign="center">
          <Heading marginBottom="3%">Try Calendly free</Heading>
          <Box marginBottom="3%">
             <Text fontSize="lg">After your 14-day trial of our Teams plan, enjoy the Free version of Calendly-<br/>forever.</Text>
