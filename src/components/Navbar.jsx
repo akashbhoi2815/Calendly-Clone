@@ -1,10 +1,8 @@
-
 import React, { useState } from 'react'
 import { Box, Button, Container, Grid, GridItem, Heading, HStack, Image, SimpleGrid, Stack, Text, useDisclosure, VStack, Wrap, WrapItem } from '@chakra-ui/react'
 import {ChevronDownIcon, ChevronRightIcon} from "@chakra-ui/icons"
 import {Link} from "react-router-dom";
 import styles from './Nav.module.css';
-
 
 export const Navbar = () => {
 
@@ -27,7 +25,6 @@ export const Navbar = () => {
    // }
 
   return (
-
     
 
    <Box top='0' padding="2%" width="100%" position="fixed" bg="chakra-body-bg" boxShadow="lg" zIndex="2">
@@ -51,50 +48,11 @@ export const Navbar = () => {
            </HStack>
     </Box>
 
-
-            <Box>
-              <ul>
-                <li>
-                  <HStack>
-                    <Link to="/product">
-                      {" "}
-                      <Heading as="h4" fontWeight="semibold" size="sm">
-                        Product
-                      </Heading>{" "}
-                    </Link>
-                    <ChevronDownIcon />
-                  </HStack>
-                  <Box
-                    className={styles.menuSub}
-                    width="100%"
-                    height="auto"
-                    position="absolute"
-                    display="none"
-                  >
-                    <Grid
-                      textAlign="left"
-                      templateColumns="repeat(3,1fr)"
-                      boxShadow="dark-lg"
-                    >
-                      <GridItem
-                        bg="#DAEAF1"
-                        width="250px"
-                        roundedTopLeft="md"
-                        roundedBottomLeft="md"
-                      >
-                        <Box p={5}>
-                          <Link to="">
-                            <Heading as="h6" size="2sm" fontWeight="semibold">
-                              Product
-                            </Heading>
-                            <Text mt={1}>
-                              Get to know the leader in automated scheduling and
-                              see why millions connect using Calendly.
-                            </Text>
-                          </Link>
-                        </Box>
-                      </GridItem>
-
+    <Box>
+          <HStack>
+          <Heading as="h4" size="sm" fontWeight="semibold">Enterprise</Heading>
+       </HStack>
+    </Box>
 
     <Box zIndex={1}>
         <ul >
@@ -103,7 +61,6 @@ export const Navbar = () => {
                <Link to="/">< Heading as="h4" fontWeight="semibold" size="sm">Product</Heading> </Link>
                <ChevronDownIcon/>
                 </HStack>
-
                
            
                            <Box className={styles.menuSub}
@@ -245,7 +202,6 @@ export const Navbar = () => {
                             </GridItem>
                           </Grid>
                        </Box>
-
             </li>
         </ul>
     </Box>
