@@ -1,14 +1,21 @@
 import { CheckCircleIcon, ChevronRightIcon } from '@chakra-ui/icons'
 import { Box, Button, Grid, GridItem, Heading, HStack, Input, TagRightIcon, Text } from '@chakra-ui/react'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Home.module.css'
 import capture_1 from "./Images/capture_1.png";
 import capture_2 from './Images/capture_2.png';
 import capture_3 from './Images/capture_3.png';
 import capture_4 from './Images/capture_4.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const HomePage = () => {
+
+   useEffect(()=>{
+      AOS.init({ duration:2000 })
+   },[])
+
   return (
     <Box width="100%" margin="auto" marginTop="8%">
       <Box width="80%" display="flex" justifyContent="space-between" margin='auto' marginBottom="7%">
@@ -188,12 +195,12 @@ export const HomePage = () => {
           </Box>
      </Box>
 
-     <Box textAlign='center' marginBottom="10%">
+     <Box textAlign='center' marginBottom="10%" >
         <Heading marginBottom="2%" color="#1d344b">Do more of what you do best</Heading>
         <Text fontSize="xl">With scheduling hassles and interruptions gone, your day is cleared for<br/>accomplishment.</Text>
      </Box>
 
-     <Box width="80%" margin='auto' display="flex" justifyContent="space-between" marginBottom='15%' alignItems="center" >
+     <Box data-aos="zoom-in" width="80%" margin='auto' display="flex" justifyContent="space-between" marginBottom='15%' alignItems="center" >
         <Box width="38%" textAlign="left">
            <Heading mb={5} color="#006bff" fontWeight="semibold" letterSpacing={1} size="sm">WORKFLOW MANAGEMENT</Heading>
            <Box>
@@ -210,7 +217,7 @@ export const HomePage = () => {
         </Box>
      </Box>
 
-     <Box width="80%" margin='auto' display="flex" justifyContent="space-between" alignItems="center" marginBottom='15%' >
+     <Box  data-aos="zoom-in"width="80%" margin='auto' display="flex" justifyContent="space-between" alignItems="center" marginBottom='15%' >
         <Box width="40%" >
            <img src={capture_3} alt="" />
         </Box>
@@ -225,7 +232,7 @@ export const HomePage = () => {
         </Box>
      </Box>
 
-     <Box width="80%" margin='auto' display="flex" alignItems="center" justifyContent="space-between" marginBottom='15%'>
+     <Box   data-aos="zoom-in" width="80%" margin='auto' display="flex" alignItems="center" justifyContent="space-between" marginBottom='15%'>
         <Box width="35%" textAlign="left">
            <Heading color="#006bff" letterSpacing={1} fontWeight="semibold" mb={5} size="sm">THE COURTEOUS APPROACH</Heading>
            <Box >
