@@ -8,11 +8,45 @@ import individual_4 from "../Individual/utils/Individual-4.jpeg";
 import individual_5 from "../Individual/utils/Individual-5.jpeg";
 import individual_6 from "../Individual/utils/Individual-6.jpeg";
 import individual_video from "../Individual/utils/Individual_video.jpg";
-
+import individual_plans from "../Individual/utils/Individual_plans.jpg";
+import solution_1 from "../Individual/utils/solution_1.jpeg";
+import solution_2 from "../Individual/utils/solution_2.jpeg";
+import solution_3 from "../Individual/utils/solution_3.jpeg";
+import solution_4 from "../Individual/utils/solution_4.jpeg";
+import features_1 from "../Individual/utils/features_1.jpeg";
 
 export const IndividualPage = () => {
 
+  const solutionBox = [
+    {
+    imageUrl: solution_1,
+    imageAlt: 'Sales',
+    title: 'Sales',
+    description:"Get to your best leads faster",
+    
+  },
+  {
+    imageUrl: solution_2,
+    imageAlt: 'Recruting',
+    title: 'Recruting',
+    description:"Less emailing, more interviews",
+   
+  },
+  {
+    imageUrl: solution_3,
+    imageAlt: 'Customer Success',
+    title: 'Customer Success',
+    description:"Connect with customers when it matters",
  
+  },
+  {
+    imageUrl: solution_4,
+    imageAlt: 'Education',
+    title: 'Education',
+    description:"Boost student success",
+   
+  }
+]
   return (
     <div className={style.individual_main}>
 
@@ -304,8 +338,8 @@ export const IndividualPage = () => {
               <Button colorScheme="messenger" size="lg" marginRight="20px" >
                View all
               </Button>
-
-              <Button colorScheme="messenger" size="lg" variant='outline' border="2px">
+              
+              <Button colorScheme="messenger" variant='outline' size="lg" border="2px solid" fontSize="22px">
                 Start for free
               </Button>
             </div>
@@ -355,7 +389,151 @@ export const IndividualPage = () => {
       </div>
 
       {/* 3rd issue how works  end*/}
+        
 
+         {/* 4th issue features start*/}
+
+         <div className={style.individual_main4}>
+        <div className={style.individual_main4_box}>
+        <div>
+              <p
+                style={{
+                  fontSize: "16px",
+                  fontWeight: "500",
+                  color: "#006bff",
+                }}
+              >
+                FEATURES
+              </p>
+            </div>
+        <div>
+              <p
+                style={{
+                  fontSize: "36px",
+                  fontWeight: "bold",
+                }}
+              >
+               Favorite features and capabilities
+          </p>
+
+          <div className={style.individual_main4_box_last}>
+           
+           <div className={style.individual_main4_box_last1}>
+            <img  src={features_1} alt="features_1" width="90%"/>
+           </div>
+           <div className={style.individual_main4_box_last2}></div>
+           <div className={style.individual_main4_box_last3}>
+            <div><p>Workflows</p></div>
+            <div><p>Website embed</p></div>
+            <div><p>Customized branding</p></div>
+           </div>
+
+          </div>
+            </div>
+            
+        </div>
+      </div>
+          {/* 4th issue features start*/}
+
+       {/* 5th issue plans start*/}
+
+       <div className={style.individual_main5}>
+        <img src={individual_plans} alt="individual_plans" width="100%" />
+        
+      </div>
+
+      {/* 5th issue plans  end*/}
+
+       {/* 6h issue solution  start*/}
+       <div className={style.individual_main6}>
+        <div className={style.individual_main6_box}>
+        <div>
+              <p
+                style={{
+                  fontSize: "16px",
+                  fontWeight: "500",
+                  color: "#006bff",
+                }}
+              >
+                SOLUTIONS
+              </p>
+            </div>
+        <div>
+              <p
+                style={{
+                  fontSize: "36px",
+                  fontWeight: "bold",
+                }}
+              >
+               The right Calendly for the work you do
+          </p>
+
+          <div className={style.individual_main6_box_last}>
+            {
+              solutionBox.map((item) =>(
+                <div className={style.individual_main6_box_last_div}>
+                  <div>
+                    <img src={item.imageUrl} alt={item.imageAlt} width="100%"/>
+                  </div>
+                 
+                 <div >
+                    <p style={{fontWeight:"bold", marginLeft:"20px"}}>{item.title}</p>
+                  </div>
+                  <div style={{width:"90%"}}>
+                 <p style={{ marginLeft:"20px", color: "#67829d"}}> {item.description}</p>
+                  </div>
+                  <div>
+                    <p style={{fontWeight:"bold", marginLeft:"20px", color:"#006bff"}}>Learn more {">"}</p>
+                  </div>
+                 </div>
+                
+              ))
+            }
+
+          </div>
+            </div>
+            
+           
+      
+        </div>
+      </div>
+
+        {/* 6h issue solution  end*/}
+
+            {/* 7th issue calendly free  start*/}
+
+            <div className={style.individual_main7}>
+        <div className={style.individual_main7_box}>
+        <div>
+              <p
+                style={{
+                  fontSize: "42px",
+                  fontWeight: "1000",
+                }}
+              >
+                Try Calendly free
+              </p>
+            </div>
+            <div>
+              <p style={{ fontSize: "18px", color: "#67829d" }}>
+              After your 14-day trial of our Teams plan, enjoy the Free version of Calendly – <br/>
+               forever.
+              </p>
+            </div>
+            <div>
+              <Button colorScheme="messenger" size="lg" marginRight="20px" fontSize="16px">
+              Start for free
+              </Button>
+
+              <p style={{ fontSize: "18px", color: "#67829d", marginTop:"20px" }}>
+              To inquire about our Enterprise plans, click <span style={{fontWeight:"bold", color: "#006bff"}}>here.</span>
+
+              </p>
+            </div>
+        </div>
+      </div>
+
+      {/* 7th issue calendly free end*/}
     </div>
   );
 };

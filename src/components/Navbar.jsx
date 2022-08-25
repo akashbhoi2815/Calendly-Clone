@@ -19,7 +19,7 @@ export const Navbar = () => {
     <Box className={styles.menuContent} display="flex" alignItems="center" gap="8">
     <Box>
     <HStack>
-           <Link to="/product">  <Heading as="h4" fontWeight="semibold" size="sm">Individuals</Heading> </Link>
+           <Link to="/individual">  <Heading as="h4" fontWeight="semibold" size="sm">Individuals</Heading> </Link>
     </HStack>  
     </Box>
 
@@ -60,7 +60,7 @@ export const Navbar = () => {
                </Box>
              </GridItem>
 
-             <GridItem width="500px" >
+             <GridItem width="500px"  >
                <Box p={5} >
                 <Link to='/'>
                     <Heading as="h6" size="2sm" fontWeight="semibold">Features</Heading>
