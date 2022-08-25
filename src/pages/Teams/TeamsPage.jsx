@@ -19,6 +19,7 @@ import Team_Round_Robin from './Teampage_Image/Team_Round_Robin.jpg'
 import Team_Salesforce from './Teampage_Image/Team_Salesforce.jpg'
 
 import smartShedule from './Teampage_Image/smartSchedule.png'
+import plans from './Teampage_Image/plans.png'
 export const TeamsPage = () => {
   return (
     <Box margin={"auto"} justify={"center"} marginTop={"105px"}>
@@ -400,8 +401,8 @@ export const TeamsPage = () => {
   </TabPanels>
 </Tabs>
 
-
-<Image src={smartShedule}/>
+<Image width={'90%'} margin={'auto'} marginBottom={'40px'} src={plans} />
+<Image  src={smartShedule}/>
 
      
       </Box>
