@@ -1,27 +1,45 @@
 .price{
-    border: 2px solid red;
+     
     display: flex;
+    width: 80%;
+    margin: auto;
 }
 
 .price>div{
     width:20%;
-height: 400px;
+height: 450px;
     margin:20px;
+    border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: rgb(248,248,248);
    
 }
+.price>.teams{
+    background-color: rgb(248,250,254);
+}
 
+.bottom4{
+    border: 2px solid grey;
+}
+
+.price>.professional{
+    background-color: white
+}
+
+.price>.enterprise{
+    background-color: rgb(10,37,64);
+    color: white;
+}
 .basic{
     /* border: 2px solid red; */
     width: 30%;
     margin-left: 20px;
 }
 .basic>h5{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.4;
     text-align: left;
-    color: rgb(11, 53, 88);
+    color: white;
     font-weight: 600;
     margin-bottom: 24px;
     
@@ -46,18 +64,147 @@ height: 400px;
 }
 
 .baiscs>p{
-     font-size: 800px;
+     font-size: 1200px;
     color: rgb(71, 103, 136);
      
     line-height: 1.71429;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .bottom{
     width: 80%;
    margin-left: 20px;
    padding: 10px;
+   text-align: center;
+   justify-content: center;
    border-radius: 10px;
     border: 1px solid blue;
     margin-top: 170px;
 }
+
+
+.bottom2{
+    width: 80%;
+   margin-left: 20px;
+   padding: 10px;
+   text-align: center;
+   justify-content: center;
+   border-radius: 10px;
+    border: 1px solid blue;
+    margin-top: 150px;
+}
+
+
+.bottom3{
+    width: 80%;
+   margin-left: 20px;
+   padding: 10px;
+   text-align: center;
+   justify-content: center;
+   border-radius: 10px;
+    border: 1px solid blue;
+    margin-top: 130px;
+    background-color: blue;
+    color: white;
+    
+}
+
+
+.bottom4{
+    width: 80%;
+   margin-left: 20px;
+   padding: 10px;
+   text-align: center;
+   justify-content: center;
+   border-radius: 10px;
+    
+    margin-top: 110px;
+   
+    
+    
+}
+
+
+
+
+.bottom5{
+    width: 80%;
+   margin-left: 20px;
+   padding: 10px;
+   text-align: center;
+   justify-content: center;
+   border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 123px;
+   
+    
+    
+}
+
+
+.price2{
+   
+    display: flex;
+    width: 90%;
+}
+
+
+.basic2{
+    width: 30%;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.second{
+    display: flex;
+    /* border: 2px solid black; */
+    width: 80%;
+    margin: auto;
+}
+
+ .basicsec{
+   
+    width: 45%;
+ }
+
+ .basicsec>h5{
+    font-size: large;
+    font-weight: bold;
+ }
+
+ .essent{
+     
+    margin: 7px;
+    font-size: 20px;
+ }
+
+ .essentials2{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 40%;
+    height: 300px;
+ }
+
+ .professional2{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 40%;
+    height: 300px;
+    margin-left: 8px;
+ }
+
+ .teams2{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        
+        width: 40%;
+        height: 300px;
+        margin-left: 8px;
+  
+ }
+
+
+ .enterprise2{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 40%;
+    height: 300px;
+    margin-left: 8px;
+
+ }
