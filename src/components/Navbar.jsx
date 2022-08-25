@@ -103,6 +103,7 @@ export const Navbar = () => {
                <Link to="/">< Heading as="h4" fontWeight="semibold" size="sm">Product</Heading> </Link>
                <ChevronDownIcon/>
                 </HStack>
+
                
            
                            <Box className={styles.menuSub}
@@ -244,6 +245,7 @@ export const Navbar = () => {
                             </GridItem>
                           </Grid>
                        </Box>
+
             </li>
         </ul>
     </Box>
