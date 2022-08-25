@@ -10,7 +10,7 @@ export const Navbar = () => {
 
    <Box mt="2%" width="100%" >
 
-   <Box display="flex"  width="100%" alignItems="center" justifyContent="space-evenly" gap="5" >
+   <Box display="flex"  width="100%" alignItems="center" justifyContent="space-evenly" >
    <Box >
       <Link to="/"><img width="150px" src='https://mma.prnewswire.com/media/1682590/Calendly__Logo.jpg?w=200'/>
       </Link> 
