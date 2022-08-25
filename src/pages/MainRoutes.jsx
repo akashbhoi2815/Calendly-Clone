@@ -5,7 +5,7 @@ import { HomePage } from './HomePage/HomePage'
 import { IndividualPage } from './Individual/IndividualPage'
 import { Login } from './Login/Login'
 import { TeamsPage } from './Teams/TeamsPage'
-import { SignUp } from './SignUp/signUp'
+import { SignUp } from './SignUp/SignUp'
 
 
 
