@@ -76,81 +76,22 @@ export const AddEventPage = () => {
                     <label>location</label>
                     <InfoOutlineIcon/>
                     </HStack>
-                    <Menu >
-                        <MenuButton width="400px" as={Button} rightIcon={<ChevronDownIcon/>}>Add a location</MenuButton>
-                        <MenuList width="400px" height="250px" overflowY="scroll">
-                            <MenuItem>
-                             <HStack>
-                                <Box width="40px"><img width="100%" src='https://static.vecteezy.com/system/resources/previews/000/366/004/original/location-vector-icon.jpg'/></Box>
-                                <Box>
-                                    <Heading size="sm" fontWeight="semi-bold">In-person-meeting</Heading>
-                                    <Text color="grey" fontSize="sm">Set an address or place</Text>
-                                </Box>
-                             </HStack>
-                            </MenuItem>
-                            <MenuItem>
-                             <HStack>
-                               <Box width="40px"> <img width="100%" src='https://www.pngitem.com/pimgs/m/156-1568270_blue-phone-icon-png-clipart-png-download-transparent.png'/></Box>
-                                <Box>
-                                    <Heading size="sm" fontWeight="semi-bold">Phone call</Heading>
-                                    <Text color="grey" fontSize="sm">inbound or outbound calls</Text>
-                                </Box>
-                             </HStack>
-                            </MenuItem>
-                            <MenuItem>
-                             <HStack>
-                             <Box width="40px"> <img width="80%" src='https://assets.calendly.com/packs/frontend/media/google-meet-fe6527ea0e4bd6fb57ad.svg'/></Box>
-                                <Box>
-                                    <Heading size="sm" fontWeight="semi-bold">Google meet</Heading>
-                                    <Text color="grey" fontSize="sm">Web conference</Text>
-                                </Box>
-                             </HStack>
-                            </MenuItem>
-                            <MenuItem>
-                             <HStack>
-                             <Box width="40px"> <img width="80%" src='https://assets.calendly.com/packs/frontend/media/zoom-dd4ce5bef905d2b74c0a.svg'/></Box>
-                                <Box>
-                                    <Heading size="sm" fontWeight="semi-bold">Zoom</Heading>
-                                    <Text color="grey" fontSize="sm">Web conference</Text>
-                                </Box>
-                             </HStack>
-                            </MenuItem>
-                            <MenuItem>
-                             <HStack>
-                             <Box width="40px"> <img width="80%" src='https://assets.calendly.com/packs/frontend/media/ms-teams-e0858e32c5245a478456.svg'/></Box>
-                                <Box>
-                                    <Heading size="sm" fontWeight="semi-bold">Microsoft Teams</Heading>
-                                    <Text color="grey" fontSize="sm">Web conference</Text>
-                                </Box>
-                             </HStack>
-                            </MenuItem>
-                            <MenuItem>
-                             <HStack>
-                             <Box width="40px"> <img width="80%" src='https://assets.calendly.com/packs/frontend/media/webex-06679da3bace64c4b1d4.svg'/></Box>
-                                <Box>
-                                    <Heading size="sm" fontWeight="semi-bold">Webex</Heading>
-                                    <Text color="grey" fontSize="sm">Web conference</Text>
-                                </Box>
-                             </HStack>
-                            </MenuItem>
-                            <MenuItem>
-                             <HStack>
-                             <Box width="40px"> <img width="80%" src='https://assets.calendly.com/packs/frontend/media/gotomeeting-58f03523b2e7fe24bfcd.svg'/></Box>
-                                <Box>
-                                    <Heading size="sm" fontWeight="semi-bold">GoTo Meeting</Heading>
-                                    <Text color="grey" fontSize="sm">Web conference</Text>
-                                </Box>
-                             </HStack>
-                            </MenuItem>
-                        </MenuList>
-                    </Menu>
+                    <Select >
+                        <option>In-person-meeting</option>
+                        <option>Phone call</option>
+                        <option>Google Meet</option>
+                        <option>Zoom</option>
+                        <option>Microsoft Teams</option>
+                        <option>Webex</option>
+                        <option>GoTo Meeting</option>
+                    </Select>
                 </Box>
                 <Box>
                     <HStack mb={2}>
                       <label>Description/Instructions</label>
                       <InfoOutlineIcon/>
                     </HStack>
-                    <Textarea width="400px" height="200px"
+                    <Input width="400px" height="200px"
                     placeholder='Write a summary and any details your invitee should know about the event'/>       
                 </Box>
                 <Box>

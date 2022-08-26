@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import React from "react";
 import style from "./IndividualPage.module.css";
 import individual_1 from "../Individual/utils/Individual-1.jpeg";
@@ -7,13 +7,15 @@ import individual_3 from "../Individual/utils/Individual-3.jpeg";
 import individual_4 from "../Individual/utils/Individual-4.jpeg";
 import individual_5 from "../Individual/utils/Individual-5.jpeg";
 import individual_6 from "../Individual/utils/Individual-6.jpeg";
-import individual_video from "../Individual/utils/Individual_video.jpg";
+// import individual_video from "../Individual/utils/Individual_video.jpg";
 import individual_plans from "../Individual/utils/Individual_plans.jpg";
 import solution_1 from "../Individual/utils/solution_1.jpeg";
 import solution_2 from "../Individual/utils/solution_2.jpeg";
 import solution_3 from "../Individual/utils/solution_3.jpeg";
 import solution_4 from "../Individual/utils/solution_4.jpeg";
 import features_1 from "../Individual/utils/features_1.jpeg";
+import video from "../Individual/utils/videomet1.mp4";
+import { Link } from "react-router-dom";
 
 export const IndividualPage = () => {
 
@@ -82,7 +84,7 @@ export const IndividualPage = () => {
 
             <div>
               <Button colorScheme="messenger" size="lg">
-                Sign up for free
+                <Link to="/signup">Sign up for free</Link>
               </Button>
             </div>
           </div>
@@ -382,7 +384,20 @@ export const IndividualPage = () => {
               </p>
             </div>
             <div>
-              <img src={individual_video} alt="individual_video" style={{borderRadius:"8px", marginTop:"30px"}} />
+            <Box
+          as="video"
+          controls
+          src={video}
+          poster="https://images.ctfassets.net/k0lk9kiuza3o/52tqpJSZX1wfBDEQ6U2eV5/6ea00d6bb255dcc716a8794e1e25ed26/Image.jpg"
+          alt="Big Buck Bunny"
+          objectFit="contain"
+          width="100%"
+          margin={"auto"}
+          borderRadius="25px"
+        >
+
+      </Box>
+              {/* <img src={individual_video} alt="individual_video" style={{borderRadius:"8px", marginTop:"30px"}} /> */}
             </div>
           
         </div>
@@ -534,6 +549,8 @@ export const IndividualPage = () => {
       </div>
 
       {/* 7th issue calendly free end*/}
+
+      
     </div>
   );
 };

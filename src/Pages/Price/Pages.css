@@ -1,27 +1,45 @@
 .price{
-    border: 2px solid red;
+     
     display: flex;
+    width: 80%;
+    margin: auto;
 }
 
 .price>div{
     width:20%;
-height: 400px;
+height: 450px;
     margin:20px;
+    border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: rgb(248,248,248);
    
 }
+.price>.teams{
+    background-color: rgb(248,250,254);
+}
 
+.bottom4{
+    border: 2px solid grey;
+}
+
+.price>.professional{
+    background-color: white
+}
+
+.price>.enterprise{
+    background-color: rgb(10,37,64);
+    color: white;
+}
 .basic{
     /* border: 2px solid red; */
     width: 30%;
     margin-left: 20px;
 }
 .basic>h5{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.4;
     text-align: left;
-    color: rgb(11, 53, 88);
+    
     font-weight: 600;
     margin-bottom: 24px;
     
@@ -46,18 +64,307 @@ height: 400px;
 }
 
 .baiscs>p{
-     font-size: 800px;
+     font-size: 1200px;
     color: rgb(71, 103, 136);
      
     line-height: 1.71429;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .bottom{
     width: 80%;
    margin-left: 20px;
    padding: 10px;
+   text-align: center;
+   justify-content: center;
    border-radius: 10px;
     border: 1px solid blue;
     margin-top: 170px;
 }
+
+
+.bottom2{
+    width: 80%;
+   margin-left: 20px;
+   padding: 10px;
+   text-align: center;
+   justify-content: center;
+   border-radius: 10px;
+    border: 1px solid blue;
+    margin-top: 150px;
+}
+
+
+.bottom3{
+    width: 80%;
+   margin-left: 20px;
+   padding: 10px;
+   text-align: center;
+   justify-content: center;
+   border-radius: 10px;
+    border: 1px solid blue;
+    margin-top: 130px;
+    background-color: blue;
+    color: white;
+    
+}
+
+
+.bottom4{
+    width: 80%;
+   margin-left: 20px;
+   padding: 10px;
+   text-align: center;
+   justify-content: center;
+   border-radius: 10px;
+    
+    margin-top: 110px;
+   
+    
+    
+}
+
+
+
+
+.bottom5{
+    width: 80%;
+   margin-left: 20px;
+   padding: 10px;
+   text-align: center;
+   justify-content: center;
+   border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 123px;
+   
+    
+    
+}
+
+
+.price2{
+   
+    display: flex;
+    width: 90%;
+}
+
+
+.basic2{
+    width: 30%;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.second{
+    display: flex;
+    /* border: 2px solid black; */
+    width: 80%;
+    margin: auto;
+   
+}
+
+ .basicsec{
+   
+    width: 45%;
+ }
+
+ .basicsec>h5{
+    font-size: large;
+    font-weight: bold;
+ }
+
+ .essent{
+     
+    margin: 7px;
+    font-size: 20px;
+ }
+
+ .essentials2{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 40%;
+    height: 300px;
+    border-radius: 15px;
+ }
+
+ .professional2{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 40%;
+    height: 300px;
+    margin-left: 8px;
+    border-radius: 15px;
+ }
+
+ .teams2{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        
+        width: 40%;
+        height: 300px;
+        margin-left: 8px;
+        border-radius: 15px;
+  
+ }
+
+
+ .enterprise2{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 40%;
+    height: 300px;
+    margin-left: 8px;
+    border-radius: 15px;
+
+ }
+
+ .head{
+    
+    width: 70%;
+    margin: auto;
+ }
+
+ .head>h1{
+    font-size: 4.20875rem;
+    line-height: 1.2;
+    font-weight: 900;
+    white-space: pre-line;
+    text-align: center;
+    color: rgb(11, 53, 88);
+    margin-bottom: 32px;
+ }
+
+ .start{
+    
+    width: 70%;
+    margin: auto;  
+ }
+
+ .start>h1{
+    font-size: 4.20875rem;
+    line-height: 1.2;
+    font-weight: 900;
+    color: rgb(1,107,255);
+ }
+
+ .last{
+    margin-top: 35px;
+    
+    background-color: rgb(248,248,248);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .left{
+    /* border: 2px solid black; */
+    margin-left: 65px;
+ }
+
+ .right{
+    width: 65%;
+    /* border: 2px solid blue; */
+ }
+
+ .left>h1{
+    font-size: 4.125rem;
+    line-height: 1.2;
+    font-weight: 900;
+    text-align: left;
+    color: rgb(29, 52, 75);
+    margin-bottom: 32px;
+    max-width: 770px;
+ }
+
+ .right>div{
+
+    margin: 50px;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 10px;
+    padding: 15px;
+ }
+
+
+ .firsts{
+   
+    display: flex;
+    justify-content: space-between;
+ }
+
+
+ .firsts>div>h1{
+    text-align: left;
+    color: rgb(11, 53, 88);
+    font-size: 1.75rem;
+    line-height: 1.4;
+    font-weight: 700;
+    padding-right: 24px;
+    width: auto;
+    max-width: 95%;
+ }
+
+
+ .blue{
+    
+    height: 400px;
+    background-color: rgb(10,37,64);
+ }
+
+ .one{
+margin: 35px;
+ }
+
+ .one>h1{
+    font-size: 3.125rem;
+    line-height: 1.2;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px
+ }
+
+ .two>h3{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px
+ }
+
+ .three{
+   
+    width: 20%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .three>div>button{
+    color: white;
+    border: 2px solid white;
+    position: relative;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: Gilroy;
+    min-height: 49px;
+    height: auto;
+    margin: 8px 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: transparent;
+    background-color: rgb(0, 107, 255);
+    padding: 10px 18px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.2s linear 0s;
+    font-size: 1.125rem;
+    line-height: 1.6;
+ }
