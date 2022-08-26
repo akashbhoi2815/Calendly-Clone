@@ -2,10 +2,9 @@
 import "./Pages.css";
 export const Price=()=>{
     return(
-        <>
-        
-        <br/>
-        <br/>
+        <div style={{width:"100%", margin:"auto", marginTop:"10%"}}>
+       
+       
         <div className="head">
             <h1>Sheduling should be easy.</h1>
         </div>
@@ -45,10 +44,11 @@ export const Price=()=>{
             </div>
 
             <div className="enterprise">
-            <div className="basic"><h5>TEAMS</h5></div>
+            <div className="basic"><h5>ENTERPRISE</h5></div>
             <div className="Always"><h3>$16/seat/mo</h3></div>
-            <div className="basics"><p>When your 30+ member team needs advanced security,control, and support. </p></div>
-            <div className="bottom5"><button>GET STARTED</button></div>
+            <div className="basics"><p>
+When your 30+ member team needs advanced security, control, and support </p></div>
+            <div className="bottom5"><button>Contact Us</button></div>
 
             </div>
 
@@ -71,27 +71,27 @@ export const Price=()=>{
             <div className="essent"><h5>BASICS</h5></div>
             <div className="Always"><h3>FREE</h3></div>
             
-            <div className="bottom4"><button>GET STARTED</button></div>
+            <div className="bottom11"><button>Sign up</button></div>
             </div>
              
              
             <div className="professional2">
             <div className="essent"><h5>ESSENTIAL</h5></div>
             <div className="Always"><h3>$8</h3></div>
-            <div className="bottom4"><button>GET STARTED</button></div>
+            <div className="bottom11"><button>Sign up</button></div>
             </div>
 
 
             <div className="teams2">
             <div className="essent"><h5>PROFESSIONAL</h5></div>
             <div className="Always"><h3>$12</h3></div>
-            <div className="bottom3"><button>GET STARTED</button></div>
+            <div className="bottom11"><button>Sign up</button></div>
             </div>
 
             <div className="enterprise2">
             <div className="essent"><h5>TEAMS</h5></div>
             <div className="Always"><h3>$16</h3></div>
-            <div className="bottom4"><button>GET STARTED</button></div>
+            <div className="bottom11"><button>Contact sales</button></div>
 
             </div>
 
@@ -157,6 +157,7 @@ export const Price=()=>{
                 <div><button>Talk with Sales</button></div>
             </div>
          </div>
-        </>
+        
+        </div>
     )
 }
