@@ -302,12 +302,12 @@ export const Navbar = () => {
 
     </Box>
 
-   <Box display="flex" gap="4">
+   <Box display="flex" gap="4" alignItems="center">
     <Box className={styles.SL_BTN2}>
-       <Link to={'/login'}> <Button  variant={"ghost"}>LOG IN</Button></Link>
+       <Link to={'/login'}> <button  >LOG IN</button></Link>
     </Box>
     <Box className={styles.SL_BTN1}>
-      <Link to="/signup">   <Button border="1px solid #09c66b" fontSize="sm" fontWeight="semibold" w="120px" bg="#006bff" color="white">My Account</Button>
+      <Link to="/signup">   <button style={{color:"white",background:"#006bff",padding:"8px",width:"110px",borderRadius:"10px"}}>My Account</button>
       </Link>
     </Box>
    </Box>
