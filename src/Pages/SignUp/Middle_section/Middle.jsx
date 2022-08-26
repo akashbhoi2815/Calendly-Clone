@@ -1,6 +1,6 @@
 import { Box, Button, Heading, Text } from "@chakra-ui/react";
 import React from "react";
-import style from './middle.module.css'
+import middlestyle from './Middle.module.css'
 
 const Middle = () => {
   return (
@@ -10,12 +10,13 @@ const Middle = () => {
       bgRepeat="no-repeat"
       bgSize="100%"
       size="100%"
-      h={"60vh"}
+      maxH={"100vh"}
       bgPos="center"
       color={"white"}
       p="85"
+      textAlign={"center"}
     >
-      <Box>
+      <Box m={"auto"}>
         <Heading variant={"ghost"} color="white">
           Ready to transform how you
         </Heading>
@@ -25,11 +26,11 @@ const Middle = () => {
       </Box>
       <br />
       <br />
-      <Box>
-        <Text className={style.text_middle} >
+      <Box textAlign={"center"}>
+        <Text className={middlestyle.text_middle} >
           Share your Calendly link right from your browser, so you can schedule meetings
         </Text >
-        <Text className={style.text_middle}> without the back-and-forth</Text>
+        <Text className={middlestyle.text_middle}> without the back-and-forth</Text>
       </Box>
       <br />
       

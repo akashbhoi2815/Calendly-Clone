@@ -6,6 +6,7 @@ import { IndividualPage } from './Individual/IndividualPage'
 import { Login } from './Login/Login'
 import { TeamsPage } from './Teams/TeamsPage'
 import { SignUp } from './SignUp/SignUp'
+import AfterLogin from './Login/user_login/AfterLogin'
 
 
 
@@ -19,6 +20,8 @@ export const MainRoutes = () => {
         <Route path='/teams' element={<TeamsPage/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signUp' element={<SignUp/>}/>
+        <Route path='/user_login_page' element={<AfterLogin/>}/>
+
     </Routes>
     </>
   )

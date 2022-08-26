@@ -23,7 +23,7 @@ const Heading = {
       },
       ghost: {
         fontFamily: "Gilroy - 900",
-        fontSize: "50px",
+        fontSize: "40px",
         fontWeight: "900",
         lineHeight:"60px",
         color:"#0b3558"
