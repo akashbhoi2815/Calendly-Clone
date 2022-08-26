@@ -1,17 +1,23 @@
 .price{
      
     display: flex;
-    width: 80%;
+    width: 70%;
     margin: auto;
+    /* border: 1px solid; */
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
 }
 
 .price>div{
-    width:20%;
-height: 450px;
-    margin:20px;
+    /* width:20%; */
+height: 350px;
+    /* margin:20px; */
     border-radius: 10px;
+    padding: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: rgb(248,248,248);
+    border: 1px solid rgb(216, 213, 213);
    
 }
 .price>.teams{
@@ -30,13 +36,13 @@ height: 450px;
     background-color: rgb(10,37,64);
     color: white;
 }
-.basic{
+/* .basic{
     /* border: 2px solid red; */
-    width: 30%;
-    margin-left: 20px;
-}
+    /* width: 30%; */
+    /* margin-left: 20px; */
+ 
 .basic>h5{
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.4;
     text-align: left;
     
@@ -49,7 +55,7 @@ height: 450px;
 }
 
 .Always{
-    text-align: center;
+    /* text-align: center; */
     /* border: 2px solid blue; */
     font-size: 1.75rem;
      
@@ -59,8 +65,9 @@ height: 450px;
 
 .basics{
     /* border: 2px solid red; */
-    width: 70%;
-    margin: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
 }
 
 .baiscs>p{
@@ -79,7 +86,7 @@ height: 450px;
    justify-content: center;
    border-radius: 10px;
     border: 1px solid blue;
-    margin-top: 170px;
+    margin-top: 100px;
 }
 
 
@@ -91,7 +98,7 @@ height: 450px;
    justify-content: center;
    border-radius: 10px;
     border: 1px solid blue;
-    margin-top: 150px;
+    margin-top: 75px;
 }
 
 
@@ -103,7 +110,7 @@ height: 450px;
    justify-content: center;
    border-radius: 10px;
     border: 1px solid blue;
-    margin-top: 130px;
+    margin-top: 52px;
     background-color: blue;
     color: white;
     
@@ -118,7 +125,7 @@ height: 450px;
    justify-content: center;
    border-radius: 10px;
     
-    margin-top: 110px;
+    margin-top: 30px;
    
     
     
@@ -135,7 +142,7 @@ height: 450px;
    justify-content: center;
    border-radius: 10px;
     border: 1px solid white;
-    margin-top: 123px;
+    margin-top: 50px;
    
     
     
@@ -145,62 +152,89 @@ height: 450px;
 .price2{
    
     display: flex;
-    width: 90%;
+    width: 70%;
+    
+    text-align: center;
 }
 
 
 .basic2{
     width: 30%;
-    height: 250px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+  text-align: left;
+  padding: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 .second{
     display: flex;
     /* border: 2px solid black; */
-    width: 80%;
+    width: 70%;
     margin: auto;
+    margin-top: 80px;
+
    
 }
 
- .basicsec{
+ /* .basicsec{
    
     width: 45%;
- }
+ } */
 
  .basicsec>h5{
-    font-size: large;
+    font-size: 18px;
     font-weight: bold;
  }
 
  .essent{
      
     margin: 7px;
-    font-size: 20px;
+    font-size: 16px;
+    margin-bottom: 30px;
  }
 
  .essentials2{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 40%;
-    height: 300px;
-    border-radius: 15px;
+    /* height: 300px; */
+    border-radius: 5px;
+    border: 1px solid rgb(212, 209, 209);
  }
 
  .professional2{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 40%;
-    height: 300px;
+    /* height: 300px; */
     margin-left: 8px;
-    border-radius: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(212, 209, 209);
  }
+ .bottom11{
+   width: 60%;
+  margin-left: 30px;
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+   font-size: 14px;
+   margin-top: 30px;
+   border: 1px solid;
+   border-radius: 5px;
+  
+   
+   
+}
 
  .teams2{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         
         width: 40%;
-        height: 300px;
+        /* height: 300px; */
         margin-left: 8px;
-        border-radius: 15px;
+        border-radius: 5px;
+        border: 1px solid rgb(212, 209, 209);
   
  }
 
@@ -208,20 +242,21 @@ height: 450px;
  .enterprise2{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 40%;
-    height: 300px;
+    /* height: 300px; */
     margin-left: 8px;
-    border-radius: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(212, 209, 209);
 
  }
 
  .head{
     
-    width: 70%;
+    width: 60%;
     margin: auto;
  }
 
  .head>h1{
-    font-size: 4.20875rem;
+    font-size: 55px ;
     line-height: 1.2;
     font-weight: 900;
     white-space: pre-line;
@@ -233,38 +268,42 @@ height: 450px;
  .start{
     
     width: 70%;
-    margin: auto;  
+    margin: auto; 
+    text-align: center; 
  }
 
  .start>h1{
-    font-size: 4.20875rem;
+    font-size: 55px;
     line-height: 1.2;
     font-weight: 900;
     color: rgb(1,107,255);
  }
 
  .last{
-    margin-top: 35px;
+    margin-top: 65px;
     
     background-color: rgb(248,248,248);
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
     display: flex;
     justify-content: space-evenly;
+    padding: 100px;
+    margin-bottom: 100px;
  }
 
  .left{
     /* border: 2px solid black; */
     margin-left: 65px;
+    padding: 20px;
  }
 
  .right{
-    width: 65%;
+    width: 50%;
     /* border: 2px solid blue; */
  }
 
  .left>h1{
-    font-size: 4.125rem;
-    line-height: 1.2;
+    font-size: 2.5rem;
+    line-height: 0.7;
     font-weight: 900;
     text-align: left;
     color: rgb(29, 52, 75);
@@ -274,7 +313,7 @@ height: 450px;
 
  .right>div{
 
-    margin: 50px;
+    margin: auto;
     width: 90%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     border-radius: 10px;
@@ -292,12 +331,13 @@ height: 450px;
  .firsts>div>h1{
     text-align: left;
     color: rgb(11, 53, 88);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 1.4;
     font-weight: 700;
-    padding-right: 24px;
-    width: auto;
-    max-width: 95%;
+    padding: 10px;
+    /* padding-right: 24px; */
+    width: 100%;
+    /* max-width: 95%; */
  }
 
 
