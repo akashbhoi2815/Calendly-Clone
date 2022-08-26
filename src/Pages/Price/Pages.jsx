@@ -1,9 +1,18 @@
 
 import "./Pages.css";
-
 export const Price=()=>{
     return(
         <>
+        
+        <br/>
+        <br/>
+        <div className="head">
+            <h1>Sheduling should be easy.</h1>
+        </div>
+        <br></br>
+        <div className="start">
+          <h1>Start free.</h1>  
+        </div>
         <div className="price">
             <div className="basic">
                 <div className="basic"><h5>BASIC</h5></div>
@@ -89,6 +98,65 @@ export const Price=()=>{
 
         </div>
         </div>
+
+        <div className="last">
+
+            <div className="left">
+                <h1>Frequently</h1>
+                <h1>Asked</h1>
+                <h1>Question</h1>
+            </div>
+
+            <div className="right">
+                <div className="firsts">
+             <div><h1>What happens at the end of my trials?</h1></div>
+             <div><h1>+</h1></div>
+                </div>
+
+                <div className="firsts">
+             <div><h1>Can we try Calendly with multiple users?</h1></div>
+             <div><h1>+</h1></div>
+                </div>
+
+                <div className="firsts">
+             <div><h1>What does renewal process look like?</h1></div>
+             <div><h1>+</h1></div>
+                </div>
+
+                <div className="firsts">
+             <div><h1>How do I upgrade or downgrade?</h1></div>
+             <div><h1>+</h1></div>
+                </div>
+
+                <div className="firsts">
+             <div><h1>We're a  non-profit organization, is there special pricing available?</h1></div>
+             <div><h1>+</h1></div>
+                </div>
+
+                <div className="firsts">
+             <div><h1>What payment method do you accept?</h1></div>
+             <div><h1>+</h1></div>
+                </div>
+             </div>
+
+         </div>
+
+
+         <div className="blue">
+            <br></br>
+            <div className="one"><h1>Easy access for easy bookings.</h1></div>
+
+            <div className="two">
+               <h3>Share your Calendly link right from your browser, so you can schedule meetings</h3>
+              
+               <h3>without  the back-and-forth</h3>
+            </div>
+
+            <div className="three">
+                <div><button>Start for free</button></div>
+                <div><button>Talk with Sales</button></div>
+            </div>
+         </div>
         </>
     )
 }
