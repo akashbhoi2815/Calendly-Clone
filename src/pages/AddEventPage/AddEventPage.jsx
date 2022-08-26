@@ -163,6 +163,149 @@ export const AddEventPage = () => {
                 </Box>
          </Stack> 
 
+         {/* pavan code start */}
+
+         <div className={style.time_main}>
+      {/* box1 */}
+      <div className={style.time_main_box1}>
+        <div className={style.time_main_box1_a}>
+          <div>
+            <CalendarIcon />
+          </div>
+          <div>
+            <p>When can people book this event?</p>
+            <p style={{ color: "grey", fontSize: "14px" }}>
+              30 min, 60 rolling calendar days
+            </p>
+          </div>
+        </div>
+        <div>
+          {/* <Button
+            colorScheme="black"
+            variant="link"
+            marginRight="20px"
+            fontWeight="0"
+          >
+            Cancle
+          </Button>
+
+          <button
+            style={{
+              borderRadius: "30px",
+              color: "white",
+              padding: "5px 15px",
+              fontWeight: "bold",
+              backgroundColor: "#006bff",
+            }}
+          >
+            Next
+          </button> */}
+        </div>
+      </div>
+
+      {/* box2 */}
+      <div className={style.time_main_box2}>
+        <div className={style.time_main_box2_a}>
+          <div>
+            {" "}
+            <Text  as="b">Date range</Text>
+          </div>
+          <div>
+            <Text as="b" fontSize="xs">
+              {" "}
+              Invitees can schedule...
+            </Text>
+          </div>
+          <div style={{display:"flex", justifyContent:"space-between", gap:"10px" }}>
+           
+            <div><input type="number" style={{outline:"none",width:"30%", border:"1px solid grey", borderRadius:"5px", padding:"7px 5px"}}/></div>
+            <div><select style={{outline:"none", border:"1px solid grey", borderRadius:"5px", padding:"7px 5px", marginLeft:"-130px"}} >
+              <option value="calender_days">Calender days</option>
+              <option value="week-days">Week days</option>
+            </select>
+            </div>
+
+            <div>
+         
+              <p>into the future</p>
+              </div>
+
+          </div>
+
+          <div style={{display:"flex" , gap:"10px"}}>
+          {/* <div style={{padding:"5px 0px"}}><input type="radio" style={{width:"50px", height:"50%" }}/></div> */}
+          <p>Within a date range</p>
+          </div>
+
+          <div style={{display:"flex" , gap:"10px"}}>
+          {/* <div style={{padding:"5px 0px"}}><input type="radio" style={{width:"50px", height:"50%" }}/></div> */}
+          <p>Indefinitely into the future</p>
+          </div>
+        </div>
+        <div className={style.time_main_box2_b}>
+          <p>
+Set a range of dates when you can accept <br/> meetings.</p>
+        </div>
+      </div>
+
+
+      {/* box-3 */}
+
+      <div className={style.time_main_box3}>
+        <div className={style.time_main_box3_a}>
+          <div>
+            {" "}
+            <Text  as="b">Duration</Text>
+          </div>
+         
+          <div style={{display:"flex", justifyContent:"space-between", gap:"10px" }}>
+            
+          <div style={{width:"100%"}}><select  style={{outline:"none", border:"1px solid grey", borderRadius:"5px", padding:"7px 5px", width:"100%"}} >
+              <option value="15min">15min</option>
+              <option value="30min">30min</option>
+              <option value="45min">45min</option>
+              <option value="60min">60min</option>
+              <option value="custom">Custom</option>
+            </select>
+            </div>
+           
+
+          </div>
+        </div>
+        <div className={style.time_main_box3_b}>
+          <p>
+          Define how long your event will be. It can be as long as 12 hours.</p>
+        </div>
+      </div>
+
+      {/* box-4 */}
+
+      <div className={style.time_main_box4}>
+      <Button
+            colorScheme="black"
+            variant="link"
+            marginRight="20px"
+            fontWeight="0"
+          >
+            Cancel
+          </Button>
+
+          <button
+            style={{
+              borderRadius: "30px",
+              color: "white",
+              padding: "5px 15px",
+              fontWeight: "bold",
+              backgroundColor: "#006bff",
+            }}
+          >
+            Next
+          </button>
+      </div>
+    </div>
+
+         {/* pavan code end */}
+   
            </form>
         </Box>
    </Box>
