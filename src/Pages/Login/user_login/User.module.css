@@ -1,0 +1,20 @@
+.box {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    color: #373737;
+    padding: 35px;
+    text-align: start;
+    font-size: "16px";
+    line-height: 22px;
+    font-family: Gilroy - 700;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .box Input{
+      height: 50px;
+      font-size: "16px";
+      line-height: 22px;
+      font-family: Gilroy - 700;
+      font-weight: 700;
+  }
+  

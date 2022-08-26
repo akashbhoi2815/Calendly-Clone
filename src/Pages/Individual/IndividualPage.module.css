@@ -1,0 +1,266 @@
+
+
+.individual_main{
+    width: 100%;
+}
+
+/* 1st issue Top section  start */
+.individual_main1{
+    width: 100%;
+    /* border: 1px solid; */
+    margin-top: 10%;
+}
+
+/* box 1 */
+.individual_box1{
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+
+.individual_box1_a{
+    width: 50%;
+    /* border: 1px solid; */
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.individual_box1_b{
+    width: 50%;
+    /* border: 1px solid; */
+}
+
+/* box 2, 4, 6 */
+
+.individual_box2{
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+
+.individual_box2_a{
+    width: 50%;
+    /* border: 1px solid; */
+    padding: 50px 0px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.individual_box2_b{
+    width: 50%;
+    /* border: 1px solid; */
+}
+
+/* box 3 & 5 */
+
+.individual_box3{
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+
+.individual_box3_a{
+    width: 50%;
+    /* border: 1px solid; */
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.individual_box3_b{
+    width: 50%;
+    /* border: 1px solid; */
+}
+
+/* 1st issue Top section  end */
+
+/* 2nd issue Integration  start */
+.individual_main2{
+width: 100%;
+background-color: #f7faff;
+margin-bottom: 100px;
+padding: 50px;
+}
+
+.individual_main2_box{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* 2nd issue Integration  end */
+
+/*  3rd issue how works start */
+.individual_main3{
+    width: 100%;
+    /* background-color: #f7faff; */
+    margin-bottom: 100px;
+    /* padding: 50px; */
+    }
+    
+    .individual_main3_box{
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    /*  3rd issue how works  end */
+
+
+     /* {4th issue features start} */
+     .individual_main4{
+        width: 100%;
+        /* background-color: #f7faff; */
+        margin-bottom: 50px;
+        /* padding: 50px; */
+        /* border: 1px solid; */
+        }
+        
+        .individual_main4_box{
+            width: 70%;
+            text-align: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .individual_main4_box_last{
+            width: 100%;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            /* gap: 10px; */
+        }
+
+        .individual_main4_box_last1{
+             width: 65%;
+             /* border: 1px solid; */
+             padding: 20px 50px;
+        }
+        .individual_main4_box_last2{
+            width: 0.5%;
+            /* border: 1px solid; */
+            background-color:#006bff ;
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+        .individual_main4_box_last3{
+            width: 28%;
+            /* border: 1px solid; */
+            text-align: left;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+            padding: 40px 0px;
+            font-size: 24px;
+        }
+        
+          /* {4th issue features start} */
+
+    /* 5th issue plans  start  */
+
+    .individual_main5{
+        width: 100%;
+        /* background-color: #f7faff; */
+        margin-bottom: 50px;
+        padding: 50px 0px;
+        /* border: 1px solid; */
+        }
+
+        .individual_main5:hover{
+            cursor: pointer;
+        }
+    /* 5th issue plans  end */
+
+    /* 6th issue solution  start */
+    .individual_main6{
+        width: 100%;
+        /* background-color: #f7faff; */
+        margin-bottom: 50px;
+        /* padding: 50px; */
+        /* border: 1px solid; */
+        }
+        
+        .individual_main6_box{
+            width: 70%;
+            text-align: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .individual_main6_box_last{
+            width: 100%;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            /* gap: 10px; */
+        }
+        .individual_main6_box_last_div{
+            width: 24%;
+            border: 1px solid rgb(210, 206, 206);
+            border-radius: 5px;
+            /* border-top-left-radius: 5px;
+            border-top-right-radius: 5px; */
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-bottom: 20px;
+        }
+        .individual_main6_box_last_div:hover{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        .individual_main6_box_last_div img{
+             border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+    /* 6th issue solution  start */
+
+    /* 7th issue calendly free start */
+
+    .individual_main7{
+        width: 100%;
+        background-color: #f7faff;
+        margin-bottom: 50px;
+        padding: 50px;
+        }
+        
+        .individual_main7_box{
+            width: 70%;
+            text-align: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        
+    /* 7th issue calendly free end */
