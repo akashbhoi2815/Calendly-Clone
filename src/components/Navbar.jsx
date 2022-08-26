@@ -208,7 +208,7 @@ export const Navbar = () => {
      
     <Box>
           <HStack>
-          <Heading as="h4" size="sm" fontWeight="semibold">Pricing</Heading>
+       <Link to="/price"> <Heading as="h4" size="sm" fontWeight="semibold">Pricing</Heading></Link>
        </HStack>
     </Box>
 
