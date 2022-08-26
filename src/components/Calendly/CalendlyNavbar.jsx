@@ -29,10 +29,14 @@ const CalendlyNavbar = () => {
   const navigate = useNavigate();
   return (
     <>
-          
-      <Box background={useColorModeValue("white", "red.900")} px={46} mx={"5rem"} marginBottom={'5px'} >
+      <Box
+        background={useColorModeValue("white", "red.900")}
+        px={46}
+        mx={"5rem"}
+        marginBottom={"5px"}
+      >
         <Flex
-        borderBottom='2px solid whiteSmoke'
+          borderBottom="2px solid whiteSmoke"
           h={20}
           w={["90%", "85%", "80%"]}
           py={4}
@@ -117,8 +121,7 @@ const CalendlyNavbar = () => {
               >
                 <Flex marginLeft={8}>
                   <Avatar size={"sm"} src={""} />
-                  <Box marginLeft={4} marginTop={2} >
-                  
+                  <Box marginLeft={4} marginTop={2}>
                     <Button
                       variant={"link"}
                       bg={"none"}
@@ -185,7 +188,7 @@ const CalendlyNavbar = () => {
                   <Box marginRight={3}>
                     <IoIosLogOut size={18} />
                   </Box>
-                  LogOut
+                  <button> LogOut</button>
                 </MenuItem>
               </MenuList>
             </Menu>

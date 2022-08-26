@@ -18,8 +18,8 @@ import { Link } from "react-router-dom";
 
 const CalendlyNav2 = () => {
   return (
-    <Box px={49} my={"5rem"} mx={"15rem"} mt={'1rem'} boxShadow={'-moz-initial'}  mb={'2rem'} borderBottom={'2px solid whiteSmoke'}  >
-      <Flex h={28} justifyContent="space-between" alignItems={"center"}>
+    <Box  mt={'1rem'} boxShadow='md'  mb={'2rem'} borderBottom={'2px solid whiteSmoke'}  >
+      <Flex h={28} justifyContent="space-between" alignItems={"center"} width={'60%'} margin={'auto'} display={'flex'}>
         <VStack spacing={6}>
           <HStack>
             <Button
