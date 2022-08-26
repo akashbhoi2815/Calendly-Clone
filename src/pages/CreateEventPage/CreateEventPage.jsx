@@ -7,10 +7,10 @@ export const CreateEventPage = () => {
     <Box width='70%' margin="auto" marginTop="3%">
         <Box width="60%" padding="2%">
             <HStack justifyContent="space-between">
-                <Button variant="outline" fontWeight="light" rounded="3xl" colorScheme="messenger">
+                <button style={{color:"#006bff",border:"1px solid #006bff",width:"80px",padding:"5px",borderRadius:"50px"}}>
                     <ChevronLeftIcon/>
                     Back
-                </Button>
+                </button>
                 <Heading size="md">Create New Event Type</Heading>
             </HStack>
         </Box>
@@ -83,7 +83,7 @@ export const CreateEventPage = () => {
                     <Heading mb={2} size="md">One-off meeting</Heading>
                     <Text>Invite someone to pick a time to meet with you.</Text>
                 </Box>
-                <Button variant="outline" fontWeight="light" colorScheme="messenger" rounded="3xl">Create</Button>
+                <button style={{color:"#006bff",border:"1px solid #006bff",width:"80px",padding:"5px",borderRadius:"50px"}}>Create</button>
              </Box>
              <Box boxShadow="2xl" rounded="md" width="500px" height="220px" padding="2%">
              <img width="50px" src='https://www.di-soric.com/var/site/storage/images/int-market/produktvergleich/99787-2-ger-DE/Produktvergleich.png'/>
@@ -91,7 +91,7 @@ export const CreateEventPage = () => {
                     <Heading mb={2} size="md">Meeting poll</Heading>
                     <Text>Schedule a group meeting after offering times for a vote.</Text>
                 </Box>
-                <Button variant="outline" fontWeight="light" colorScheme="messenger" rounded="3xl">Create</Button>
+                <button style={{color:"#006bff",border:"1px solid #006bff",width:"80px",padding:"5px",borderRadius:"50px"}}>Create</button>
              </Box>
           </HStack>
         </Box>
