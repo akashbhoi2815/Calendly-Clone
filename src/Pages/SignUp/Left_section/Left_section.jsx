@@ -10,7 +10,7 @@ import {
   Img,
   HStack,
 } from "@chakra-ui/react";
-import "./left.css";
+import leftstyle from "./Left.module.css";
 const Left_section = () => {
   let months = [
     "January",
@@ -32,7 +32,7 @@ const Left_section = () => {
   return (
     <Box p="50" textAlign={"start"}>
       <Box >
-        <Text className="webinar">WEBINAR</Text>
+        <Text className={leftstyle.webinar}>WEBINAR</Text>
         <br />
         <Box>
           <Heading variant={"ghost"}>How Sales Teams</Heading>
@@ -40,7 +40,7 @@ const Left_section = () => {
           <Heading variant={"ghost"}>Calendly</Heading>
         </Box>
         <Box mt={"5"}>
-          <Flex gap={"60px"} className="date">
+          <Flex gap={"60px"} className={leftstyle.date}>
             <Box>
               <Text color={"#476788"}>Date & Time</Text>
               <Text mt={"2"}>{date} at 10:30pm</Text>
@@ -52,7 +52,7 @@ const Left_section = () => {
             </Box>
           </Flex>
           <br />
-          <Text className="text">
+          <Text className={leftstyle.text}>
             Join this webinar to learn how sales teams use Calendly to turn
             meeting scheduling into a competitive advantage.
             <br />
