@@ -29,7 +29,7 @@ const SignUp_Section = () => {
 
   useEffect(()=>{
     if(currentUser){
-      navigate('/user_login_page')
+      navigate('/calendly_homepage')
     }
   },[currentUser,navigate])
 

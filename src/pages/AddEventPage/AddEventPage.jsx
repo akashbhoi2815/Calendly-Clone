@@ -1,6 +1,7 @@
 import { CalendarIcon, ChevronDownIcon, ChevronLeftIcon, ExternalLinkIcon, Icon, InfoOutlineIcon } from '@chakra-ui/icons'
 import { Box, Button, Heading, HStack, Input, Menu, MenuButton, MenuItem, MenuList, Select, Stack, Text, Textarea } from '@chakra-ui/react'
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from './AddEvent.module.css';
 
 export const AddEventPage = () => {
@@ -8,10 +9,12 @@ export const AddEventPage = () => {
    <Box width="70%" margin="auto" marginTop="3%">
        <Box width="60%" padding="2%" marginBottom="3%">
             <HStack justifyContent="space-between">
-                <button style={{border:"1px solid #006bff", color:"#006bff",width:"100px",padding:"5px",borderRadius:"50px"}}>
+               <Link to='/create_event'>
+               <button style={{border:"1px solid #006bff", color:"#006bff",width:"100px",padding:"5px",borderRadius:"50px"}}>
                     <ChevronLeftIcon/>
                     Back
                 </button>
+               </Link>
                 <Heading size="md" fontWeight="semibold">Add One-on-One Event Type</Heading>
             </HStack>
         </Box>

@@ -38,7 +38,7 @@ const EventTypes = () => {
           
         </Flex>
         <Flex>
-        <Link to={'/userevent/userhome/eventforms'}>
+        <Link to='/add_event'>
           <Button w={'180px'} color={"blue.500"} rounded={"full"} borderColor={'blue.500'} variant={"outline"}  fontSize={'14px'}>
             + New Event Type
           </Button>

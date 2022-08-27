@@ -9,6 +9,8 @@ import capture_3 from './Images/capture_3.png';
 import capture_4 from './Images/capture_4.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Navbar } from '../../components/Navbar'
+import Footer from '../../components/Footer'
 
 export const HomePage = () => {
 
@@ -17,6 +19,8 @@ export const HomePage = () => {
    },[])
 
   return (
+   <>
+   <Box><Navbar/></Box>
     <Box width="100%" margin="auto" marginTop="8%">
       <Box width="80%" display="flex" justifyContent="space-between" margin='auto' marginBottom="7%">
          <Box width="35%">
@@ -260,5 +264,7 @@ export const HomePage = () => {
          <Text>To inquire about our Enterprise plans, clikc <span style={{color:"#006bff"}}>here.</span></Text>
      </Box>
     </Box>
+    <Box><Footer/></Box>
+    </>
   )
 }

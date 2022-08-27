@@ -78,7 +78,7 @@ const CalendlyNav2 = () => {
         </VStack>
 
         <Flex alignItems={"center"}>
-            <Link to={'#'}>
+            <Link to='/create_event'>
             <Button
               variant={"solid"}
               bg={"#3372cc"}

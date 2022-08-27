@@ -1,16 +1,19 @@
 import { ChevronLeftIcon } from '@chakra-ui/icons'
 import { Box, Button, Flex, Heading, HStack, Text } from '@chakra-ui/react'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const CreateEventPage = () => {
   return (
     <Box width='70%' margin="auto" marginTop="3%">
         <Box width="60%" padding="2%">
             <HStack justifyContent="space-between">
+                <Link to='/calendly_homepage'>
                 <button style={{color:"#006bff",border:"1px solid #006bff",width:"80px",padding:"5px",borderRadius:"50px"}}>
                     <ChevronLeftIcon/>
                     Back
                 </button>
+                </Link>
                 <Heading size="md">Create New Event Type</Heading>
             </HStack>
         </Box>
@@ -26,7 +29,9 @@ export const CreateEventPage = () => {
                     </Box>
                     </Box>
                     <Box>
+                        <Link to='/add_event'>
                         <Button colorScheme="messenger" p={5} fontWeight="semi-bold" rounded="3xl">Create</Button>
+                        </Link>
                     </Box>
                 </HStack>
             </Box>

@@ -20,8 +20,12 @@ import Team_Salesforce from './Teampage_Image/Team_Salesforce.jpg'
 
 import smartShedule from './Teampage_Image/smartSchedule.png'
 import plans from './Teampage_Image/plans.png'
+import { Navbar } from '../../components/Navbar';
+import Footer from '../../components/Footer';
 export const TeamsPage = () => {
   return (
+    <>
+    <Box><Navbar/></Box>
     <Box margin={"auto"} justify={"center"} marginTop={"105px"}>
       {/* calendly for temas */}
     <Stack minH={'80vh'} width={"90%"} margin={"auto"} marginBottom={"40px"} direction={{ base: 'column', md: 'row' }}>
@@ -406,5 +410,7 @@ export const TeamsPage = () => {
 
      
       </Box>
+      <Box><Footer/></Box>
+      </>
   )
 }
