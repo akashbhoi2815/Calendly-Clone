@@ -2,7 +2,7 @@ import { CalendarIcon, ChevronDownIcon, ChevronLeftIcon, ExternalLinkIcon, Icon,
 import { Box, Button, Heading, HStack, Input, Menu, MenuButton, MenuItem, MenuList, Select, Stack, Text, Textarea } from '@chakra-ui/react'
 
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import style from './AddEvent.module.css';
 
@@ -16,7 +16,8 @@ export const AddEventPage = () => {
   const events = useSelector((store)=>store.appReducer.events)
   // const currentUser = useSelector((store)=>store.authReducer.currentUser)
   const dispatch = useDispatch()
-
+   const navigate = useNavigate()
+  
     const [postData, setPostData] = useState({
         "name": "",
         "start_date": "",
@@ -47,6 +48,7 @@ export const AddEventPage = () => {
       description:"",
       duration:""
     })
+    navigate("/calendly_homepage", { replace: true })
   }
 
   return (

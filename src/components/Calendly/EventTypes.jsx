@@ -20,8 +20,10 @@ import { RiSettings2Fill } from "react-icons/ri";
 import { BiLink, BiCodeAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import EventCard from "./EventCard";
+import { useSelector } from "react-redux";
 
 const EventTypes = () => {
+  const currentUser =  useSelector((store)=>store.authReducer.currentUser)
   return (
     <Box mx={"18rem"} >
       <InputGroup  mb={'23px'} >
@@ -36,7 +38,7 @@ const EventTypes = () => {
       <Flex justifyContent={"space-between"}>
         <Flex gap={10}>
           <Avatar size={'sm'} />
-          <Text>UserName</Text>
+          <Text>{currentUser !==null ? `${currentUser.displayName}` : ""}</Text>
           
         </Flex>
         <Flex>
