@@ -10,5 +10,5 @@ if(process.env.NODE_ENV === 'development'){
     middleware.push(logger)
 }
 
-const rootReducer = combineReducers({authReducer})
+const rootReducer = combineReducers({authReducer,appReducer})
 export const store = legacy_createStore(rootReducer,applyMiddleware(...middleware))

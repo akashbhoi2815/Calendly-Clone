@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Flex,
+  Grid,
   Input,
   InputGroup,
   InputLeftElement,
@@ -10,6 +11,7 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
+  Stack,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
@@ -18,8 +20,10 @@ import { RiSettings2Fill } from "react-icons/ri";
 import { BiLink, BiCodeAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import EventCard from "./EventCard";
+import { useSelector } from "react-redux";
 
 const EventTypes = () => {
+  const currentUser =  useSelector((store)=>store.authReducer.currentUser)
   return (
     <Box mx={"18rem"} >
       <InputGroup  mb={'23px'} >
@@ -34,7 +38,7 @@ const EventTypes = () => {
       <Flex justifyContent={"space-between"}>
         <Flex gap={10}>
           <Avatar size={'sm'} />
-          <Text>UserName</Text>
+          <Text>{currentUser !==null ? `${currentUser.displayName}` : ""}</Text>
           
         </Flex>
         <Flex>
@@ -61,9 +65,9 @@ const EventTypes = () => {
         </Flex>
       </Flex>
       <hr style={{marginTop:"10px"}} />
-      <Flex justifyContent={'left'} gap={8}>
+      <Grid templateColumns='repeat(3, 1fr)'gap={8}>
         <EventCard/>
-      </Flex>
+      </Grid>
 
     </Box>
   );

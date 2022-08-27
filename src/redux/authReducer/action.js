@@ -54,6 +54,13 @@ const logoutFailure = (error) => {
   };
 };
 
+export const setUser =(user)=>{
+  return{
+   type:types.SET_USER,
+   payload:user
+  }
+}
+
 export const signupInit = (email, password, displayName) => {
   return function (dispatch) {
     dispatch(signupRequest());

@@ -1,18 +1,13 @@
+import "./App.css";
+import MeetingShedule from "./components/Calendly/MeetingShedule/MeetingShedule";
 
-import './App.css';
-import MeetingShedule from './components/Calendly/MeetingShedule/MeetingShedule';
-import { CreateEventPage } from './Pages/CreateEventPage/CreateEventPage';
-
-import { MainRoutes } from './Pages/MainRoutes';
- 
+import { MainRoutes } from "./Pages/MainRoutes";
 
 function App() {
   return (
     <div className="App">
-
-    {/* <MainRoutes/> */}
-    <MeetingShedule/>
-  
+      <MainRoutes />
+      <MeetingShedule/>
     </div>
   );
 }
