@@ -33,7 +33,9 @@ export const HomePage = () => {
                 <Input width="250px" height="50px" placeholder='enter email'/>
                 </Box>
                 <Box ml={-2}>
+                <Link to='/signUp'>
                 <Button colorScheme="messenger" height="50px" variant="solid" color="white">Signup</Button>
+                </Link>
                 </Box>
              </Box>
                <Box mt={1} textAlign="left" ml={1}><Text fontSize="sm">Create your free account. No credit card required.</Text></Box>
