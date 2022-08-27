@@ -13,10 +13,29 @@ import CalendlyHomePage from './CalendlyHomePage/CalendlyHomePage'
 import { CreateEventPage } from './CreateEventPage/CreateEventPage'
 import { AddEventPage } from './AddEventPage/AddEventPage'
 import { MyAccount } from './MyAccount/MyAccount'
+import UserRoute from './UserRoute'
 
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { auth } from "../redux/firebase";
+import { setUser } from "../redux/authReducer/action";
 
 
 export const MainRoutes = () => {
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    auth.onAuthStateChanged((authUser)=>{
+       if(authUser){
+         dispatch(setUser(authUser))
+       }else{
+        dispatch(setUser(null))
+       }
+    })
+  }, [dispatch])
+
+
   return (
    <>
    
@@ -28,10 +47,23 @@ export const MainRoutes = () => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/signUp' element={<SignUp/>}/>
         <Route path='/user_login_page' element={<AfterLogin/>}/>
-        <Route path='/calendly_homepage' element={<CalendlyHomePage/>}/>
-        <Route path='/create_event' element={<CreateEventPage/>}/>
-        <Route path='/add_event' element={<AddEventPage/>}/>
-        <Route path='/profile' element={<MyAccount/>}/>
+        <Route path='/calendly_homepage' element={
+          <UserRoute>
+        <CalendlyHomePage/></UserRoute>
+        }/>
+        <Route path='/create_event' element={
+          <UserRoute>
+        <CreateEventPage/></UserRoute>}
+        />
+        <Route path='/add_event' element={
+          <UserRoute>
+        <AddEventPage/></UserRoute>
+      }
+        />
+        <Route path='/profile' element={
+          <UserRoute>
+        <MyAccount/></UserRoute>
+        }/>
     </Routes>
     </>
   )

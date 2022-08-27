@@ -20,6 +20,12 @@ const authReducer = (state = initialState, action) => {
         ...state,
         currentUser: null,
       };
+      case types.SET_USER:
+      return{
+        ...state,
+        isLoading:false,
+        currentUser:action.payload
+      }
     case types.SIGNUP_SUCCESS:
     case types.LOGIN_SUCCESS:
       return {

@@ -201,7 +201,7 @@ const CalendlyNavbar = () => {
                   <Box marginRight={3}>
                     <IoIosLogOut size={18} />
                   </Box>
-                  <button> LogOut</button>
+                  <button onClick={handleAuth}> LogOut</button>
                 </MenuItem>
               </MenuList>
             </Menu>
