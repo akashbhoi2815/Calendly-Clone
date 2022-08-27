@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Flex,
+  Grid,
   Input,
   InputGroup,
   InputLeftElement,
@@ -10,6 +11,7 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
+  Stack,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
@@ -61,9 +63,9 @@ const EventTypes = () => {
         </Flex>
       </Flex>
       <hr style={{marginTop:"10px"}} />
-      <Flex justifyContent={'left'} gap={8}>
+      <Grid templateColumns='repeat(3, 1fr)'gap={8}>
         <EventCard/>
-      </Flex>
+      </Grid>
 
     </Box>
   );

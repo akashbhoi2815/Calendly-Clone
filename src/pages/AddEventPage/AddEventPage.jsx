@@ -1,10 +1,54 @@
 import { CalendarIcon, ChevronDownIcon, ChevronLeftIcon, ExternalLinkIcon, Icon, InfoOutlineIcon } from '@chakra-ui/icons'
 import { Box, Button, Heading, HStack, Input, Menu, MenuButton, MenuItem, MenuList, Select, Stack, Text, Textarea } from '@chakra-ui/react'
+
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import style from './AddEvent.module.css';
 
+import React, { useState } from "react";
+import { useSelector,useDispatch } from "react-redux";
+import { addEventData, getEventData } from "../../redux/appReducer/action";
+
+
 export const AddEventPage = () => {
+
+  const events = useSelector((store)=>store.appReducer.events)
+  // const currentUser = useSelector((store)=>store.authReducer.currentUser)
+  const dispatch = useDispatch()
+
+    const [postData, setPostData] = useState({
+        "name": "",
+        "start_date": "",
+        "end_date":"", 
+        "location":"",
+        "description":"",
+        "link":"calendly.com/",
+        "duration":""
+    })
+    const {name,location,start_date,end_date,link,description,duration} = postData
+  
+  const handleChange=(e)=>{
+     const {name , value} = e.target
+     setPostData({...postData,[name]:value})
+     console.log(name,value)
+  }
+  
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    dispatch(addEventData(postData))
+      .then(dispatch(getEventData()));
+    setPostData({
+      name:"",
+      location:"",
+      start_date:"",
+      end_date:"",
+      link:"",
+      description:"",
+      duration:""
+    })
+  }
+
   return (
    <Box width="70%" margin="auto" marginTop="3%">
        <Box width="60%" padding="2%" marginBottom="3%">
@@ -64,29 +108,36 @@ export const AddEventPage = () => {
            </HStack>
            <hr/>
 
-           <form style={{padding:"5%"}}>
+           <form style={{padding:"5%"}} onSubmit={handleSubmit}>
                <Stack spacing={8}>
                 <Box>
                     <HStack mb={2}>
                     <label>Event name*</label>
                     <InfoOutlineIcon/>
                     </HStack>
-                    <Input width="400px"/>
+                    <Input width="400px"
+                     type="text" 
+                     name='name' 
+                     value={name}
+                     onChange={handleChange}
+                     required
+                    />
                 </Box>
                 
                 <Box>
                     <HStack mb={2}>
-                    <label>location</label>
+                    <label>Location</label>
                     <InfoOutlineIcon/>
                     </HStack>
-                    <Select >
-                        <option>In-person-meeting</option>
-                        <option>Phone call</option>
-                        <option>Google Meet</option>
-                        <option>Zoom</option>
-                        <option>Microsoft Teams</option>
-                        <option>Webex</option>
-                        <option>GoTo Meeting</option>
+                    <Select name="location" value={location} onChange={handleChange} required>
+                        <option value="">Select location</option>
+                        <option value="In-person-meeting" data-icon="fa-solid fa-arrow-down-from-line">In-person-meeting</option>
+                        <option value="Phone call">Phone call</option>
+                        <option value="Google Meet">Google Meet</option>
+                        <option value="Zoom">Zoom</option>
+                        <option value="Microsoft Teams">Microsoft Teams</option>
+                        <option value="Webex">Webex</option>
+                        <option value="GoTo Meeting">GoTo Meeting</option>
                     </Select>
                 </Box>
                 <Box>
@@ -95,7 +146,13 @@ export const AddEventPage = () => {
                       <InfoOutlineIcon/>
                     </HStack>
                     <Input width="400px" height="200px"
-                    placeholder='Write a summary and any details your invitee should know about the event'/>       
+                    type="text" 
+                    name='description' 
+                    value={description}
+                    onChange={handleChange}
+                    placeholder='Write a summary and any details your invitee should know about the event'
+                    required
+                    />       
                 </Box>
                 <Box>
                     <HStack mb={2}>
@@ -103,7 +160,13 @@ export const AddEventPage = () => {
                         <InfoOutlineIcon/>
                     </HStack>
                     <label>calendly.com/</label><br/>
-                    <Input width="400px"/>
+                    <Input width="400px"
+                    type="text" 
+                    name='link' 
+                    value={link}
+                    onChange={handleChange}
+                    required
+                    />
                 </Box>
          </Stack> 
 
@@ -160,30 +223,49 @@ export const AddEventPage = () => {
               Invitees can schedule...
             </Text>
           </div>
-          <div style={{display:"flex", justifyContent:"space-between", gap:"10px" }}>
+          {/* <div style={{display:"flex", justifyContent:"space-between", gap:"10px" }}>
            
-            <div><input type="number" style={{outline:"none",width:"30%", border:"1px solid grey", borderRadius:"5px", padding:"7px 5px"}}/></div>
+             <div><input type="number" style={{outline:"none",width:"30%", border:"1px solid grey", borderRadius:"5px", padding:"7px 5px"}}/></div>
             <div><select style={{outline:"none", border:"1px solid grey", borderRadius:"5px", padding:"7px 5px", marginLeft:"-130px"}} >
               <option value="calender_days">Calender days</option>
               <option value="week-days">Week days</option>
             </select>
-            </div>
+            </div> 
 
             <div>
          
               <p>into the future</p>
               </div>
 
+          </div> */}
+
+          <div style={{display:"flex" , gap:"10px"}}>
+          {/* <div style={{padding:"5px 0px"}}><input type="radio" style={{width:"50px", height:"50%" }}/></div> */}
+          <Text mt={"2"}>Start_Date  </Text><br /><br />
+          <input 
+          type="date"
+           min="2022-08-26"
+           max="2031-12-31"
+           name="start_date"
+           value={start_date}
+           onChange={handleChange}
+           required
+           />
           </div>
 
           <div style={{display:"flex" , gap:"10px"}}>
           {/* <div style={{padding:"5px 0px"}}><input type="radio" style={{width:"50px", height:"50%" }}/></div> */}
-          <p>Within a date range</p>
-          </div>
-
-          <div style={{display:"flex" , gap:"10px"}}>
-          {/* <div style={{padding:"5px 0px"}}><input type="radio" style={{width:"50px", height:"50%" }}/></div> */}
-          <p>Indefinitely into the future</p>
+          <Text mt={"2"}>End_Date</Text><br /><br />
+          <input 
+          ml={"1"}
+           type="date"
+           name="end_date"
+           min="2022-08-26" 
+           max="2031-12-31"
+           value={end_date}
+           onChange={handleChange}    
+           required      
+          />
           </div>
         </div>
         <div className={style.time_main_box2_b}>
@@ -204,7 +286,9 @@ Set a range of dates when you can accept <br/> meetings.</p>
          
           <div style={{display:"flex", justifyContent:"space-between", gap:"10px" }}>
             
-          <div style={{width:"100%"}}><select  style={{outline:"none", border:"1px solid grey", borderRadius:"5px", padding:"7px 5px", width:"100%"}} >
+          <div style={{width:"100%"}}>
+            <select name="duration" value={duration} onChange={handleChange}
+              style={{outline:"none", border:"1px solid grey", borderRadius:"5px", padding:"7px 5px", width:"100%"}} required >
               <option value="15min">15min</option>
               <option value="30min">30min</option>
               <option value="45min">45min</option>
@@ -226,6 +310,7 @@ Set a range of dates when you can accept <br/> meetings.</p>
 
       <div className={style.time_main_box4}>
       <Button
+            
             colorScheme="black"
             variant="link"
             marginRight="20px"
@@ -235,6 +320,7 @@ Set a range of dates when you can accept <br/> meetings.</p>
           </Button>
 
           <button
+          type="submit"
             style={{
               borderRadius: "30px",
               color: "white",
@@ -242,6 +328,7 @@ Set a range of dates when you can accept <br/> meetings.</p>
               fontWeight: "bold",
               backgroundColor: "#006bff",
             }}
+            
           >
             Next
           </button>

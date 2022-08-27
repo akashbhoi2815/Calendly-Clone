@@ -17,7 +17,7 @@ export const appReducer = (state = initialState, action) => {
       case types.GET_SUCCESS:
       return{
         ...state,
-        products: payload,
+        events: payload,
         isLoading: false,
         isError: false,
       }
