@@ -1,7 +1,7 @@
 import { CalendarIcon, ChevronDownIcon, ChevronLeftIcon, ExternalLinkIcon, Icon, InfoOutlineIcon } from '@chakra-ui/icons'
 import { Box, Button, Heading, HStack, Input, Menu, MenuButton, MenuItem, MenuList, Select, Stack, Text, Textarea } from '@chakra-ui/react'
 
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 import style from './AddEvent.module.css';

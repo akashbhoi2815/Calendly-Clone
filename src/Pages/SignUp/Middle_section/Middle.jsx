@@ -1,6 +1,6 @@
 import { Box, Button, Heading, Text } from "@chakra-ui/react";
 import React from "react";
-import middlestyle from './middle.module.css'
+import middlestyle from './Middle.module.css'
 
 const Middle = () => {
   return (
