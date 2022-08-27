@@ -25,8 +25,19 @@ import { IoIosLogOut } from "react-icons/io";
 import { MdPeople } from "react-icons/md";
 import Calendlylogo from "../../Pages/Teams/Teampage_Image/Calendly_logo.jpg";
 
+
+import { useDispatch, useSelector } from "react-redux";
+import { logoutInit } from '../../redux/authReducer/action';
 const CalendlyNavbar = () => {
   const navigate = useNavigate();
+
+  const currentUser =  useSelector((store)=>store.authReducer.currentUser)
+  const dispatch = useDispatch();
+  const handleAuth=()=>{
+    if(currentUser){
+      dispatch(logoutInit())
+    }
+  }
   return (
     <>
       <Box
