@@ -11,6 +11,7 @@ import {
   Img,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer";
 export const Login = () => {
   let months = [
     "January",
@@ -32,6 +33,7 @@ export const Login = () => {
   console.log("date: ", date, months[m]);
 
   return (
+    <>
     <Box>
       <Box className={styles.nav}>
         <Img
@@ -127,5 +129,7 @@ export const Login = () => {
         </Box>
       </Stack>
     </Box>
+    <Box><Footer/></Box>
+    </>
   );
 };

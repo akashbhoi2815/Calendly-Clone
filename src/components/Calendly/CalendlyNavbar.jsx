@@ -58,7 +58,7 @@ const CalendlyNavbar = () => {
         >
           <HStack spacing={8} alignItems={"center"}>
             <Box>
-              <Link to={"/"}>
+              <Link to="/calendly_homepage">
                 <Image
                   boxSize={"40px"}
                   w={"100%"}
@@ -139,7 +139,7 @@ const CalendlyNavbar = () => {
                       rightIcon={<MdOutlineKeyboardArrowDown />}
                     >
                       Account
-                    </Button>{" "}
+                    </Button>
                   </Box>
                 </Flex>
               </MenuButton>
@@ -150,7 +150,9 @@ const CalendlyNavbar = () => {
                     {" "}
                     <FaUserAlt size={14} />{" "}
                   </Box>{" "}
-                  Account Settings
+                 <Link to='/profile'>
+                 <button> Account Settings</button>
+                 </Link>
                 </MenuItem>
                 <MenuItem>
                   <Box marginRight={4}>

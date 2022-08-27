@@ -16,6 +16,8 @@ import solution_4 from "../Individual/utils/solution_4.jpeg";
 import features_1 from "../Individual/utils/features_1.jpeg";
 import video from "../Individual/utils/videomet1.mp4";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer";
+import { Navbar } from "../../components/Navbar";
 
 export const IndividualPage = () => {
 
@@ -50,6 +52,8 @@ export const IndividualPage = () => {
   }
 ]
   return (
+    <>
+    <div><Navbar/></div>
     <div className={style.individual_main}>
 
       {/* 1st issue Top section  start*/}
@@ -552,5 +556,7 @@ export const IndividualPage = () => {
 
       
     </div>
+    <div><Footer/></div>
+    </>
   );
 };
