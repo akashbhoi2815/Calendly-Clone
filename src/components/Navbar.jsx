@@ -27,7 +27,7 @@ export const Navbar = () => {
   return (
     
 
-   <Box top='0' padding="2%" width="100%" position="fixed" bg="chakra-body-bg" boxShadow="lg" zIndex="2">
+   <Box  top='0' padding="2%" width="100%" position="fixed" bg="chakra-body-bg" boxShadow="lg" zIndex="2">
 
    <Box display="flex"  width="100%" alignItems="center" justifyContent="space-evenly" >
    <Box >

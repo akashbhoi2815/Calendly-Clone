@@ -79,10 +79,6 @@
     animation-iteration-count: infinite;
 }
 
-
-
-
-
 @keyframes slidein {
     from{
         left:-10%;
