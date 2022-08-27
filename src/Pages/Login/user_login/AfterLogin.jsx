@@ -29,7 +29,7 @@ const AfterLogin = () => {
 
   useEffect(() => {
     if (currentUser) {
-      navigate("/");
+      navigate("/calendly_homepage");
     }
   }, [currentUser, navigate]);
 

@@ -1,11 +1,15 @@
 import { Box, Flex } from "@chakra-ui/react";
 import React from "react";
+import Footer from "../../components/Footer";
+import { Navbar } from "../../components/Navbar";
 import Left_section from "./Left_section/Left_section";
 import Middle from "./Middle_section/Middle";
 import SignUp_Section from "./Right_section/SignUp_Section";
 
 export const SignUp = () => {
   return (
+    <>
+    <Box><Navbar/></Box>
     <Box mt={"100px"}>   
     <br />
      <Flex justifyContent={"center"}>
@@ -32,6 +36,7 @@ export const SignUp = () => {
       <Middle />
     </Box>
     </Box>
-
+    <Box><Footer/></Box>
+    </>
   );
 };

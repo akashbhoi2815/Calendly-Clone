@@ -1,7 +1,11 @@
 
+import Footer from "../../components/Footer";
+import { Navbar } from "../../components/Navbar";
 import "./Pages.css";
 export const Price=()=>{
     return(
+        <>
+        <div><Navbar/></div>
         <div style={{width:"100%", margin:"auto", marginTop:"10%"}}>
        
        
@@ -159,5 +163,7 @@ When your 30+ member team needs advanced security, control, and support </p></di
          </div>
         
         </div>
+        <div><Footer/></div>
+        </>
     )
 }
