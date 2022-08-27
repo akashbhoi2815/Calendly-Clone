@@ -13,13 +13,21 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import { BiCopy, BiNote } from "react-icons/bi";
 import { MdEdit, MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { RiDeleteBin6Fill, RiSettings2Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
-
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { useSelector } from "react-redux";
+import   './EventCard.css'
 const EventCard = () => {
+
+  const currentUser =  useSelector((store)=>store.authReducer.currentUser)
+
+  const [textCopied, setTextCopied] = useState(false)
+  const textCopyHandler = () => setTextCopied(true)
+  let url = `https://calendlyclone.netlify.app/user=${currentUser.email}/15`
   return (
     <Box
    
@@ -92,7 +100,7 @@ const EventCard = () => {
         <hr/>
         <Stack direction={'row'} mt={2} spacing={4} >
         <Button flex={1} fontSize={'sm'} variant={'link'} leftIcon={<BiCopy/>} color={'blue.500'}>
- Copy Link
+  Copy Link
         </Button>
         <Button
             flex={1}

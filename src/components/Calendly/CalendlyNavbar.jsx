@@ -60,7 +60,7 @@ const CalendlyNavbar = () => {
 
           <Flex alignItems={"center"}>
             <HStack as={"nav"} marginLeft={"20rem"} spacing={8}>
-              <Link to="/calendlyhomepage" textDecoration={"none"}>
+              <Link to="/calendly_homepage" textDecoration={"none"}>
                 <Button
                   variant={"link"}
                   fontSize={"16px"}
