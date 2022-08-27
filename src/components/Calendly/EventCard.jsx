@@ -13,10 +13,14 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+
+import React, { useEffect, useState } from "react";
+
+
 import { BiCopy, BiNote } from "react-icons/bi";
 import { MdEdit, MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { RiDeleteBin6Fill, RiSettings2Fill } from "react-icons/ri";
-import React, { useEffect } from "react";
+
 import { useDispatch, useSelector } from "react-redux";
 import {useLocation, useSearchParams,Link} from 'react-router-dom';
 import { deleteEventData, getEventData } from "../../redux/appReducer/action";
@@ -45,6 +49,7 @@ const EventCard = () => {
     }
   },[dispatch,events.length])
   console.log('events: ', events);
+
 
   return (
     <>
@@ -214,7 +219,7 @@ const EventCard = () => {
         <hr/>
         <Stack direction={'row'} mt={2} spacing={4} >
         <Button flex={1} fontSize={'sm'} variant={'link'} leftIcon={<BiCopy/>} color={'blue.500'}>
- Copy Link
+  Copy Link
         </Button>
         <Button
             flex={1}
