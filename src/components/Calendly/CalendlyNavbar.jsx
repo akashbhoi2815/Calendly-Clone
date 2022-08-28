@@ -25,8 +25,19 @@ import { IoIosLogOut } from "react-icons/io";
 import { MdPeople } from "react-icons/md";
 import Calendlylogo from "../../Pages/Teams/Teampage_Image/Calendly_logo.jpg";
 
+
+import { useDispatch, useSelector } from "react-redux";
+import { logoutInit } from '../../redux/authReducer/action';
 const CalendlyNavbar = () => {
   const navigate = useNavigate();
+
+  const currentUser =  useSelector((store)=>store.authReducer.currentUser)
+  const dispatch = useDispatch();
+  const handleAuth=()=>{
+    if(currentUser){
+      dispatch(logoutInit())
+    }
+  }
   return (
     <>
       <Box
@@ -60,7 +71,7 @@ const CalendlyNavbar = () => {
 
           <Flex alignItems={"center"}>
             <HStack as={"nav"} marginLeft={"20rem"} spacing={8}>
-              <Link to="/calendlyhomepage" textDecoration={"none"}>
+              <Link to="/calendly_homepage" textDecoration={"none"}>
                 <Button
                   variant={"link"}
                   fontSize={"16px"}
@@ -190,7 +201,7 @@ const CalendlyNavbar = () => {
                   <Box marginRight={3}>
                     <IoIosLogOut size={18} />
                   </Box>
-                  <button> LogOut</button>
+                  <button onClick={handleAuth}> LogOut</button>
                 </MenuItem>
               </MenuList>
             </Menu>

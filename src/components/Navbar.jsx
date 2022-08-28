@@ -3,8 +3,11 @@ import { Box, Button, Container, Grid, GridItem, Heading, HStack, Image, SimpleG
 import {ChevronDownIcon, ChevronRightIcon} from "@chakra-ui/icons"
 import {Link} from "react-router-dom";
 import styles from './Nav.module.css';
+import { useSelector } from 'react-redux'; 
 
 export const Navbar = () => {
+
+   const currentUser = useSelector((store)=>store.authReducer.currentUser)
 
    // const [showContent,setShowContent] = useState(false)
    // const [showresources,setShowResources] = useState(false)
@@ -304,10 +307,10 @@ export const Navbar = () => {
 
    <Box display="flex" gap="4" alignItems="center">
     <Box className={styles.SL_BTN2}>
-       <Link to={'/login'}> <button  >LOG IN</button></Link>
+       <Link to={'/login'}> {currentUser===null ? " Login" : ""}</Link>
     </Box>
     <Box className={styles.SL_BTN1}>
-      <Link to="/signup">   <button style={{color:"white",background:"#006bff",padding:"8px",width:"110px",borderRadius:"10px"}}>My Account</button>
+      <Link to="/signup">   <button style={{color:"white",background:"#006bff",padding:"8px",width:"110px",borderRadius:"10px"}}>{currentUser===null ? " Sign Up" : "My Account"}</button>
       </Link>
     </Box>
    </Box>

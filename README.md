@@ -1,70 +1,125 @@
 # Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
+___
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# About Calendly
+- Calendly is your hub for scheduling meetings professionally and efficiently.
+- You can create multiple types of meeting links — 30 mins, 60 mins etc. Each type of meeting would have a unique link. This link can be shared with anyone to book a time on your calendar.Calendly is a software company that develops a business communication platform for teams to schedule, prepare and follow up on external meetings. Thousands of teams across the globe use Calendly to make millions of 1-click meetings every week. Coordinate, connect and nurture relationships all in one meeting lifecycle platform.
+___
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Tech We Used
+- React
+- Redux
+- Chakra Ui
+- ES6
+- Javascript
+- CSS
+- HTML5
+___
 
-### `npm test`
+  
+# Features
+- User SignUp/Login
+- After Login showing dashboard
+- MeetingShedule Form
+___
+# Deployment
+- Deploy Fronted on netlify link - [Live Project Link](calendly.com)
+- Deploy Backend on heroku - [Heroku Link](https://calendlyauth.herokuapp.com/events)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Blog link [Meduimu Blog](https://medium.com/@chhatrapal25825/calendly-clone-fd01a856ce1a)
 
-### `npm run build`
+# Homepage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![HomePage](https://user-images.githubusercontent.com/95302680/187042891-b136640e-f30f-4edb-a175-987b2dc55ec5.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+___
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+___
 
-### `npm run eject`
+# Individual Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Individual](https://user-images.githubusercontent.com/95302680/187042941-e85842e6-6cdc-4f02-9f36-7cf9beebb6a0.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+___
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+___
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Team Page
 
-## Learn More
+![TeamPage](https://user-images.githubusercontent.com/95302680/187042975-ca4b731b-7839-4979-b322-6a12eb2c5522.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+___
+ # Pricing Page
+ ![Pricing Page](https://user-images.githubusercontent.com/95302680/187060513-782a9b69-b8c7-4950-8d0c-e8875b15fd8a.png)
+___
+___
+# Login
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  ![Login](https://user-images.githubusercontent.com/95302680/187043063-5cb5838f-8abd-4d6a-947c-271c04abf3c2.png)
 
-### Code Splitting
+  ___
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  ___
 
-### Analyzing the Bundle Size
+  # SignUp
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Signup](https://user-images.githubusercontent.com/95302680/187043108-fc7c4105-8508-4e42-91df-21b207d09604.png)
+___
+# Calendly Booking Page
+![Calendly HomePage](https://user-images.githubusercontent.com/95302680/187060541-86ceb8de-0b8f-4e7c-974e-80fec7a0aa9c.png)
+___
+# Event Booking Form
+![Screenshot 2022-08-28 11 35 21](https://user-images.githubusercontent.com/95302680/187060580-9e30edf1-3899-44b8-b4a6-658be295fac1.png)
+___
+___
 
-### Making a Progressive Web App
+# Meeting Schedule Form
+![Screenshot 2022-08-28 11 39 39](https://user-images.githubusercontent.com/95302680/187060598-5d6d1df6-971d-4502-8569-4f0074019348.png)
+___
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+___
 
-### `npm run build` fails to minify
+## 🔗 Team Members & Contributions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 1. Akash Subhash Bhoi
+
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/akashbhoi2815)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akashbhoi0261/)
+
+ 2. Chhatrapal Ahirwar
+
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Chhattoo25)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chhatrapal-ahirwar-12b9aa217/)
+
+ 3. Bharanishwaran
+
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Bharani619)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bharanishwaran-m/)
+
+ 2. Pavan Ambulkar
+
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/ambulkarpavan)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pavanambulkar/)
+
+ 2. Rohit Raj
+
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Rohitraj97)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rohit1raj2001/)
+
+
+
+  
+
+
+
+
+
