@@ -54,9 +54,10 @@ ___
 ![TeamPage](https://user-images.githubusercontent.com/95302680/187042975-ca4b731b-7839-4979-b322-6a12eb2c5522.png)
 
 ___
-
+ # Pricing Page
+ ![Pricing Page](https://user-images.githubusercontent.com/95302680/187060513-782a9b69-b8c7-4950-8d0c-e8875b15fd8a.png)
 ___
-
+___
 # Login
 
   ![Login](https://user-images.githubusercontent.com/95302680/187043063-5cb5838f-8abd-4d6a-947c-271c04abf3c2.png)
@@ -68,6 +69,22 @@ ___
   # SignUp
 
 ![Signup](https://user-images.githubusercontent.com/95302680/187043108-fc7c4105-8508-4e42-91df-21b207d09604.png)
+___
+# Calendly Booking Page
+![Calendly HomePage](https://user-images.githubusercontent.com/95302680/187060541-86ceb8de-0b8f-4e7c-974e-80fec7a0aa9c.png)
+___
+# Event Booking Form
+![Screenshot 2022-08-28 11 35 21](https://user-images.githubusercontent.com/95302680/187060580-9e30edf1-3899-44b8-b4a6-658be295fac1.png)
+___
+___
+
+# Meeting Schedule Form
+![Screenshot 2022-08-28 11 39 39](https://user-images.githubusercontent.com/95302680/187060598-5d6d1df6-971d-4502-8569-4f0074019348.png)
+___
+
+
+
+
 
 ___
 
