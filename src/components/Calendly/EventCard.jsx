@@ -39,15 +39,16 @@ const EventCard = () => {
   //   }
    
   // }
+  
   const handleDelete = (id) =>{
     dispatch(deleteEventData(id)).then(dispatch(getEventData()))
   }
-  
   useEffect(()=>{
-    if(events.length==0){
-      dispatch(getEventData())
-    }
-  },[dispatch,events.length])
+    dispatch(getEventData())
+    console.log("delete")
+  },[dispatch])
+  
+  
   console.log('events: ', events);
 
 
@@ -57,7 +58,7 @@ const EventCard = () => {
       events.length===0 ? "No Events" :
       events.map((el)=>(
         <Box
-   
+        key={el.id}
         maxW={"320px"}
         w={"400px"}
         mt={'2%'}
@@ -86,7 +87,7 @@ const EventCard = () => {
                 <Box mr={2}>
                   <MdEdit />
                 </Box>
-                Edit
+                <Link to={`/editpage/${el.id}`}>Edit</Link>
               </MenuItem>
               <MenuItem>
                 <Box mr={2}>

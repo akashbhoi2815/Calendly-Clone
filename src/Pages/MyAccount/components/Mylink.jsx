@@ -1,7 +1,9 @@
 import { Box, HStack, Input, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 export const Mylink = () => {
+  const currentUser = useSelector((store)=>store.authReducer.currentUser)  
   return (
     <Box width="350px">
        <Stack spacing={10}>
@@ -11,7 +13,7 @@ export const Mylink = () => {
        <Box>
         <HStack>
           <Text>Calendly.com/</Text>
-          <Input placeContent='username'/>
+          <Input placeContent='username' value={currentUser.displayName}/>
         </HStack>
        </Box>
        <button style={{background:'blue',color:"white",borderRadius:"50px",width:"150px",padding:"5px"}}>Save Changes</button>

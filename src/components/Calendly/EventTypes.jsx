@@ -38,7 +38,10 @@ const EventTypes = () => {
       <Flex justifyContent={"space-between"}>
         <Flex gap={10}>
           <Avatar size={'sm'} />
-          <Text>{currentUser !==null ? `${currentUser.displayName}` : ""}</Text>
+          <Text>{currentUser !==null ? `${currentUser.displayName}` : "Username"}</Text>
+          <br />
+          <br />
+          <Text>{currentUser !==null ? `${currentUser.email}` : "Username"}</Text>
           
         </Flex>
         <Flex>
