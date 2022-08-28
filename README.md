@@ -11,7 +11,7 @@ ___
 - You can create multiple types of meeting links — 30 mins, 60 mins etc. Each type of meeting would have a unique link. This link can be shared with anyone to book a time on your calendar.Calendly is a software company that develops a business communication platform for teams to schedule, prepare and follow up on external meetings. Thousands of teams across the globe use Calendly to make millions of 1-click meetings every week. Coordinate, connect and nurture relationships all in one meeting lifecycle platform.
 ___
 
-# Tech We Use
+# Tech We Used
 - React
 - Redux
 - Chakra Ui
