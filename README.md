@@ -31,6 +31,8 @@ ___
 - Deploy Fronted on netlify link - [Live Project Link](calendly.com)
 - Deploy Backend on heroku - [Heroku Link](https://calendlyauth.herokuapp.com/events)
 
+## Blog link [Meduimu Blog](https://medium.com/@chhatrapal25825/calendly-clone-fd01a856ce1a)
+
 # Homepage
 
 ![HomePage](https://user-images.githubusercontent.com/95302680/187042891-b136640e-f30f-4edb-a175-987b2dc55ec5.png)
