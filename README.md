@@ -28,7 +28,7 @@ ___
 - MeetingShedule Form
 ___
 # Deployment
-- Deploy Fronted on netlify link - [Live Project Link](calendly.com)
+- Deploy Fronted on netlify link - [Live Project Link](https://calendl-yparallel-cast-7381.vercel.app/)
 - Deploy Backend on heroku - [Heroku Link](https://calendlyauth.herokuapp.com/events)
 
 ## Blog link [Meduimu Blog](https://medium.com/@chhatrapal25825/calendly-clone-fd01a856ce1a)
