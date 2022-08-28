@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { HomePage } from "./HomePage/HomePage";
@@ -11,7 +12,9 @@ import CalendlyHomePage from "./CalendlyHomePage/CalendlyHomePage";
 import { CreateEventPage } from "./CreateEventPage/CreateEventPage";
 import { AddEventPage } from "./AddEventPage/AddEventPage";
 import { MyAccount } from "./MyAccount/MyAccount";
+import { ShowCalendar } from './ViewBooking/ShowCalendar'
 import UserRoute from "./UserRoute";
+
 
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
@@ -79,6 +82,14 @@ export const MainRoutes = () => {
           element={
             <UserRoute>
               <EditPage />
+            </UserRoute>
+          }
+        />
+         <Route
+          path="/booking_page"
+          element={
+            <UserRoute>
+              <ShowCalendar/>
             </UserRoute>
           }
         />

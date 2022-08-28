@@ -214,7 +214,7 @@ const EventCard = () => {
         <Text fontWeight={400} color={"gray.500"} mb={"8px"}>
           30 mins, One-on-One
         </Text>
-        <Link to={"#"} color={"blue.500"}>
+        <Link to='/booking_page' color={"blue.500"}>
           View booking page
         </Link>
         <hr/>
