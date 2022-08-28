@@ -33,6 +33,8 @@ const AfterLogin = () => {
     }
   }, [currentUser, navigate]);
 
+  
+
   const handleChange = (e) => {
     let { name, value } = e.target;
     setState({ ...state, [name]: value });
@@ -48,11 +50,6 @@ const AfterLogin = () => {
 
   return (
     <Box w={"30%"} m="auto" className={userstyle.box}>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <br />
       <Box>
         <Img src="" alt="" />

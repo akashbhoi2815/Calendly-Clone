@@ -2,16 +2,17 @@ import React, { useEffect } from "react";
 import {  useNavigate } from "react-router-dom";
 import {  useSelector } from "react-redux";
 
-const UserRoute = ({ children, ...rest }) => {
+const UserRoute = ({ children }) => {
+  // const location = useLocation();
   const currentUser = useSelector((store) => store.authReducer.currentUser);
-  // return currentUser ? <Route {...rest} /> : <LoadingToRedirect/>
   const navigate = useNavigate()
   useEffect(() => {
     if(!currentUser){
-      navigate("/")
+      navigate("/calendly_homepage")
     }
   }, [navigate,currentUser])
   
+
   
   return children
 };

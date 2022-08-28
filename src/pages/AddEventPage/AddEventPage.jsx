@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import style from './AddEvent.module.css';
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector,useDispatch } from "react-redux";
 import { addEventData, getEventData } from "../../redux/appReducer/action";
 
@@ -25,7 +25,8 @@ export const AddEventPage = () => {
         "location":"",
         "description":"",
         "link":"calendly.com/",
-        "duration":""
+        "duration":"",
+        "id":Date.now()
     })
     const {name,location,start_date,end_date,link,description,duration} = postData
   
@@ -50,6 +51,11 @@ export const AddEventPage = () => {
     })
     navigate("/calendly_homepage", { replace: true })
   }
+  useEffect(()=>{
+    if(events.lenght>=0)
+    dispatch(getEventData())
+  
+},[dispatch])
 
   return (
    <Box width="70%" margin="auto" marginTop="3%">

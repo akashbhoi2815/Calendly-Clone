@@ -70,9 +70,12 @@ export const signupInit = (email, password, displayName) => {
         user.updateProfile({
           displayName,
         });
+        alert("SignUp Successfull")
         dispatch(signupSuccess(user));
       })
-      .catch((error) => dispatch(signupFailure(error)));
+      .catch((error) => {
+        alert("SignUp failed")
+        dispatch(signupFailure(error))});
   };
 };
 
@@ -82,9 +85,12 @@ export const loginInit = (email, password) => {
     auth
       .signInWithEmailAndPassword(email, password)
       .then(({ user }) => {
+        alert("Login Successfull")
         dispatch(loginSuccess(user));
       })
-      .catch((error) => dispatch(loginFailure(error.massage)));
+      .catch((error) => {
+        alert("Login Failed")
+        dispatch(loginFailure(error.massage))});
   };
 };
 
