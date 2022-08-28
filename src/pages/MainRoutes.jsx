@@ -13,6 +13,7 @@ import CalendlyHomePage from './CalendlyHomePage/CalendlyHomePage'
 import { CreateEventPage } from './CreateEventPage/CreateEventPage'
 import { AddEventPage } from './AddEventPage/AddEventPage'
 import { MyAccount } from './MyAccount/MyAccount'
+import { ShowCalendar } from './ViewBooking/ShowCalendar'
 
 
 
@@ -32,6 +33,7 @@ export const MainRoutes = () => {
         <Route path='/create_event' element={<CreateEventPage/>}/>
         <Route path='/add_event' element={<AddEventPage/>}/>
         <Route path='/profile' element={<MyAccount/>}/>
+        <Route path='/booking_page' element={<ShowCalendar/>}/>
     </Routes>
     </>
   )
