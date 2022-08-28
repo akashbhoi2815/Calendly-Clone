@@ -21,6 +21,7 @@ import { useEffect } from "react";
 import { auth } from "../redux/firebase";
 import { setUser } from "../redux/authReducer/action";
 import { EditPage } from "./EditPage";
+import { ConfirmPage } from "../components/Calendly/ConfirmPage";
 
 export const MainRoutes = () => {
   const dispatch = useDispatch();
@@ -86,10 +87,18 @@ export const MainRoutes = () => {
           }
         />
          <Route
-          path="/booking_page"
+          path="/booking_page/:id"
           element={
             <UserRoute>
               <ShowCalendar/>
+            </UserRoute>
+          }
+        />
+         <Route
+          path="/confirm_page"
+          element={
+            <UserRoute>
+              <ConfirmPage/>
             </UserRoute>
           }
         />
