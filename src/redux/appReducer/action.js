@@ -6,11 +6,11 @@ export const getEventData = (params) => (dispatch)=>{
     return axios.get(`https://calendlyauth.herokuapp.com/events`,params)
     .then((res)=>{
         console.log(res.data);
-        return dispatch({type: types.GET_SUCCESS, payload: res.data})
+         dispatch({type: types.GET_SUCCESS, payload: res.data})
     })
     .catch((err)=>{
         console.log(err);
-        return dispatch({type: types.GET_FAILURE});
+         dispatch({type: types.GET_FAILURE});
     })
 }
 
@@ -18,8 +18,9 @@ export const deleteEventData = (id) => (dispatch) =>{
     dispatch({type:types.DELETE_REQUEST});
     return axios.delete(`https://calendlyauth.herokuapp.com/events/${id}`)
     .then(res=>{
-        alert("Event Deleted")
+        
        return dispatch(({type: types.DELETE_SUCCESS, payload:res.data}))
+       
     })
     .catch(err=>{
         console.log(err);
@@ -29,7 +30,7 @@ export const deleteEventData = (id) => (dispatch) =>{
 
 export const editEventData = (id, payload) => (dispatch)=>{
     dispatch({type: types.EDIT_REQUEST});
-    return axios.patch(`https://calendlyauth.herokuapp.com/events/${id}`, payload)
+    return axios.put(`https://calendlyauth.herokuapp.com/events/${id}`, payload)
     .then(res=>{
         return dispatch({type: types.EDIT_SUCCESS, payload:res.data})
     })
