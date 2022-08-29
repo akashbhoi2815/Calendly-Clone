@@ -10,7 +10,7 @@ export const ConfirmPage = () => {
     <Box width="50%" p={"20"} m="150px auto" align="center" boxShadow={"dark-lg"}>
       <Box>
         <Heading size="md">Confirmed</Heading>
-        <Text>You are scheduled with {currentUser.displayName}</Text>
+        <Text>Pavan is scheduled with {currentUser.displayName}</Text>
       </Box>
      
       <Box  width={"60%"}>

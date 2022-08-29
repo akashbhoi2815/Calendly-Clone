@@ -4,7 +4,7 @@ import 'react-calendar/dist/Calendar.css';
 import "./ReactCalendar.css";
 import { UserDetails } from './UserDetails';
 import {Stack} from "@chakra-ui/react";
-import {Link, useNavigate} from "react-router-dom";
+import {Link, useNavigate, useParams} from "react-router-dom";
 
 export const ShowCalendar = () => {
   const [showTime,setShowTime] = useState(false);
@@ -19,6 +19,8 @@ export const ShowCalendar = () => {
     setShowTime(true);
   }
   
+  const { id} = useParams()
+
   const handleClick =()=>{
      setSelectTime(true);
   }
@@ -52,7 +54,7 @@ export const ShowCalendar = () => {
              <button style={{background:"blue",width:"100px",borderRadius:"10px",color:"white",padding:"5px"}}>Confirm</button>
              </Stack>
           </div>
-          <Link to="/confirm_page"><button style={{marginTop:"45%",padding:'2%',marginLeft:"10px",border:"1px solid blue",width:"100px",borderRadius:"10px",background:"blue",color:"white"}} type='submit'>Next</button></Link>
+          <Link to={`/booking_page/${id}/meetingschedule`}><button style={{marginTop:"45%",padding:'2%',marginLeft:"10px",border:"1px solid blue",width:"100px",borderRadius:"10px",background:"blue",color:"white"}} type='submit'>Next</button></Link>
           </div>
         )}
         </div>

@@ -22,6 +22,7 @@ import { auth } from "../redux/firebase";
 import { setUser } from "../redux/authReducer/action";
 import { EditPage } from "./EditPage";
 import { ConfirmPage } from "../components/Calendly/ConfirmPage";
+import MeetingShedule from "../components/Calendly/MeetingShedule/MeetingShedule";
 
 export const MainRoutes = () => {
   const dispatch = useDispatch();
@@ -91,6 +92,14 @@ export const MainRoutes = () => {
           element={
             <UserRoute>
               <ShowCalendar/>
+            </UserRoute>
+          }
+        />
+        <Route
+          path="/booking_page/:id/meetingschedule"
+          element={
+            <UserRoute>
+              <MeetingShedule/>
             </UserRoute>
           }
         />
